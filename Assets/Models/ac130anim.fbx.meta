@@ -61,8 +61,8 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
-    optimizeGameObjects: 0
-    motionNodeName: 
+    optimizeGameObjects: 1
+    motionNodeName: <Root Transform>
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
@@ -104,8 +104,86 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
-      transformMask: []
-      maskType: 3
+      transformMask:
+      - path: 
+        weight: 1
+      - path: heliEngine.003
+        weight: 1
+      - path: heliEngine.003/bladeB.003
+        weight: 1
+      - path: heliEngine.003/bladeC.003
+        weight: 1
+      - path: heliEngine.003/bladeD.003
+        weight: 1
+      - path: heliEngine.003/bladeA.003
+        weight: 1
+      - path: heliEngine.003/Cone.003
+        weight: 1
+      - path: heliEngine.002
+        weight: 1
+      - path: heliEngine.002/Cone.002
+        weight: 1
+      - path: heliEngine.002/bladeA.002
+        weight: 1
+      - path: heliEngine.002/bladeD.002
+        weight: 1
+      - path: heliEngine.002/bladeC.002
+        weight: 1
+      - path: heliEngine.002/bladeB.002
+        weight: 1
+      - path: heliEngine.001
+        weight: 1
+      - path: heliEngine.001/bladeB.001
+        weight: 1
+      - path: heliEngine.001/bladeC.001
+        weight: 1
+      - path: heliEngine.001/bladeD.001
+        weight: 1
+      - path: heliEngine.001/bladeA.001
+        weight: 1
+      - path: heliEngine.001/Cone.001
+        weight: 1
+      - path: heliEngine
+        weight: 1
+      - path: heliEngine/Cone
+        weight: 1
+      - path: heliEngine/bladeA
+        weight: 1
+      - path: heliEngine/bladeD
+        weight: 1
+      - path: heliEngine/bladeC
+        weight: 1
+      - path: heliEngine/bladeB
+        weight: 1
+      - path: fuselage
+        weight: 1
+      - path: fuselage/miniGun
+        weight: 1
+      - path: fuselage/Gun.001
+        weight: 1
+      - path: fuselage/Howitzer
+        weight: 1
+      - path: fuselage/frontwindshield.008
+        weight: 1
+      - path: fuselage/frontwindshield.007
+        weight: 1
+      - path: fuselage/frontwindshield.006
+        weight: 1
+      - path: fuselage/frontwindshield.005
+        weight: 1
+      - path: fuselage/frontwindshield.004
+        weight: 1
+      - path: fuselage/frontwindshield.003
+        weight: 1
+      - path: fuselage/Cone.004
+        weight: 1
+      - path: fuselage/frontwindshield.002
+        weight: 1
+      - path: fuselage/frontwindshield.001
+        weight: 1
+      - path: fuselage/frontwindshield
+        weight: 1
+      maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
@@ -171,7 +249,7 @@ ModelImporter:
       takeName: heliEngine.003|heliEngineAction
       internalID: -6348110764578348419
       firstFrame: 0
-      lastFrame: 62.000004
+      lastFrame: 62
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -200,7 +278,7 @@ ModelImporter:
       takeName: heliEngine.002|heliEngine.001Action
       internalID: -7734977454278487187
       firstFrame: 0
-      lastFrame: 62.000004
+      lastFrame: 62
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -229,7 +307,7 @@ ModelImporter:
       takeName: heliEngine.002|heliEngine.002Action
       internalID: -7787820689434641262
       firstFrame: 0
-      lastFrame: 62.000004
+      lastFrame: 62
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -287,7 +365,7 @@ ModelImporter:
       takeName: heliEngine.002|heliEngineAction
       internalID: -2285483471342822570
       firstFrame: 0
-      lastFrame: 62.000004
+      lastFrame: 62
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -595,12 +673,12 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
-  assetBundleName: 
+  assetBundleName: one
   assetBundleVariant: 
