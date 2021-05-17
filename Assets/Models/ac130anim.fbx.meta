@@ -80,8 +80,8 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: heliEngine.003|heliEngine.001Action
-      takeName: heliEngine.003|heliEngine.001Action
+      name: heliEngine|heliEngineAction (1)
+      takeName: heliEngine|heliEngineAction
       internalID: 2265423254378399169
       firstFrame: 0
       lastFrame: 62
@@ -481,7 +481,7 @@ ModelImporter:
       takeName: heliEngine.001|heliEngineAction
       internalID: -2379146442040193164
       firstFrame: 0
-      lastFrame: 62.000004
+      lastFrame: 62
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -510,7 +510,7 @@ ModelImporter:
       takeName: heliEngine|heliEngine.001Action
       internalID: -2789709520223532884
       firstFrame: 0
-      lastFrame: 62.000004
+      lastFrame: 62
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
