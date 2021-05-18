@@ -7,6 +7,9 @@ public class engineController : MonoBehaviour
 
     private Animator anim;
 
+    //private bool aIsOn = false;
+    //private bool bIsOn = false;
+
     // Start is called before the first frame update
     void Start()
     {

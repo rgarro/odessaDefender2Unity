@@ -306,6 +306,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: ac130anim
       objectReference: {fileID: 0}
+    - target: {fileID: 4796041585462835645, guid: ef683a7ccfab9eb4b943dc5f282df0df,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4808978671597620119, guid: ef683a7ccfab9eb4b943dc5f282df0df,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ef683a7ccfab9eb4b943dc5f282df0df,
         type: 3}
       propertyPath: m_LocalPosition.x
