@@ -22,7 +22,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: heliEngine|heliEngine_003Action
+  m_Name: heliEngineTurn1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -49,7 +49,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: heliEngine|heliEngine_001Action
+  m_Name: heliEngineTurn3
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -140,7 +140,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: heliEngine|heliEngine_002Action
+  m_Name: heliEngineTurn4
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -195,7 +195,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: heliEngine|heliEngineAction
+  m_Name: heliEngineTurn
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
