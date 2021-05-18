@@ -18,9 +18,9 @@ public class engineController : MonoBehaviour
     {
         if(Input.GetKeyDown("e")){
             this.anim.Play("heliEngineTurn");
-        this.anim.Play("heliEngineTurn1");
-        this.anim.Play("heliEngineTurn3");
-        this.anim.Play("heliEngineTurn4");
+            this.anim.Play("heliEngineTurnA");
+            this.anim.Play("heliEngineTurnB");
+            this.anim.Play("heliEngineTurnC");
         }
     }
 }
