@@ -202,6 +202,41 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.3649458
+      objectReference: {fileID: 0}
+    - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.36480287
+      objectReference: {fileID: 0}
+    - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.60576665
+      objectReference: {fileID: 0}
+    - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.60562384
+      objectReference: {fileID: 0}
+    - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 62.13
+      objectReference: {fileID: 0}
+    - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.034
+      objectReference: {fileID: 0}
+    - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90.034004
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0eb3064c7459f854a911616244dd1a90, type: 3}
 --- !u!1 &359456304 stripped
@@ -217,11 +252,20 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359456304}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f23e9cc49061b374d92ca5160fb8c9cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  heliPad: {fileID: 359456306}
+  rotationSteps: 0.87
+  turnClocwise: 1
+--- !u!1 &359456306 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3274875305005976306, guid: 0eb3064c7459f854a911616244dd1a90,
+    type: 3}
+  m_PrefabInstance: {fileID: 359456303}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,6 +357,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &798663952 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3689747233609655505, guid: 0eb3064c7459f854a911616244dd1a90,
+    type: 3}
+  m_PrefabInstance: {fileID: 359456303}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &798663956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798663952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f23e9cc49061b374d92ca5160fb8c9cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heliPad: {fileID: 359456306}
+  rotationSteps: 0.87
+  turnClocwise: 1
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,28 +2,42 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ *
+ *
+ * vine en tubo magnetico de medellin, mis amigos ponian cortinas en los asientos del charter dc10 de copa ...
+ */
 public class engineController : MonoBehaviour
 {
 
-    private Animator anim;
-
-    //private bool aIsOn = false;
-    //private bool bIsOn = false;
+    public GameObject heliPad;
+    public float rotationSteps = 0.87f;
+    public bool turnClocwise = true;
+    private float helipadRotationX;
+    //public float engineY = 0;
+    //public float engineZ = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        this.anim = GetComponent<Animator>();
+        //this.anim = GetComponent<Animator>();
+        this.helipadRotationX = this.heliPad.transform.rotation.x;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown("e")){
-            this.anim.Play("heliEngineTurn");
-            //this.anim.Play("heliEngineTurnA");
-            //this.anim.Play("heliEngineTurnB");
-            //this.anim.Play("heliEngineTurnC");
-        }
+       this.rotateHelipad();
     }
+
+    private void rotateHelipad(){
+		//this.playHeliEngineSoundOn();
+        if(this.turnClocwise){
+            //this.heliPad.transform.rotation.z += this.rotationSteps;//threejs way
+            this.helipadRotationX += this.rotationSteps;
+        } else {
+            this.helipadRotationX -= this.rotationSteps;
+        }
+		this.heliPad.transform.Rotate(this.helipadRotationX,0,0);
+	}
 }
