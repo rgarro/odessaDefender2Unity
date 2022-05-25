@@ -285,27 +285,27 @@ PrefabInstance:
     - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.3649458
+      value: 0.45170447
       objectReference: {fileID: 0}
     - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.36480287
+      value: -0.45164964
       objectReference: {fileID: 0}
     - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.60576665
+      value: 0.544075
       objectReference: {fileID: 0}
     - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.60562384
+      value: 0.54402024
       objectReference: {fileID: 0}
     - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 62.13
+      value: 79.4
       objectReference: {fileID: 0}
     - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -338,6 +338,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heliPad: {fileID: 359456306}
+  heliPad2: {fileID: 0}
+  heliPad3: {fileID: 0}
+  heliPad4: {fileID: 0}
   rotationSteps: 0.87
   turnClocwise: 1
 --- !u!1 &359456306 stripped
@@ -419,7 +422,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 9.18356e-40, y: -3.11e-43, z: -1.114e-42, w: 6e-45}
+  m_BoundingSphereOverride: {x: 3.536823e-38, y: 2.7043422e+23, z: NaN, w: 1.0680067e+11}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -468,6 +471,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heliPad: {fileID: 359456306}
+  heliPad2: {fileID: 1471520350}
+  heliPad3: {fileID: 1043896268}
+  heliPad4: {fileID: 1102370767}
   rotationSteps: 0.87
   turnClocwise: 1
 --- !u!1 &963194225
@@ -553,3 +559,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1043896268 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4997228336782359330, guid: 0eb3064c7459f854a911616244dd1a90,
+    type: 3}
+  m_PrefabInstance: {fileID: 359456303}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1102370767 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3818398253423453540, guid: 0eb3064c7459f854a911616244dd1a90,
+    type: 3}
+  m_PrefabInstance: {fileID: 359456303}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1471520350 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7470039523072819767, guid: 0eb3064c7459f854a911616244dd1a90,
+    type: 3}
+  m_PrefabInstance: {fileID: 359456303}
+  m_PrefabAsset: {fileID: 0}

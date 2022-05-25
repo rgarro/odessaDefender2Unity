@@ -5,12 +5,16 @@ using UnityEngine;
 /**
  *
  *
- * vine en tubo magnetico de medellin, mis amigos ponian cortinas en los asientos del charter dc10 de copa ...
+ * Mi LibTech PickUp stick 8.0 esta en un surf shop en fort walton
+ * chunky bacon, chunky bacon !!
  */
 public class engineController : MonoBehaviour
 {
 
     public GameObject heliPad;
+    public GameObject heliPad2;
+    public GameObject heliPad3;
+    public GameObject heliPad4;
     public float rotationSteps = 0.87f;
     public bool turnClocwise = true;
     private float helipadRotationX;
@@ -38,6 +42,9 @@ public class engineController : MonoBehaviour
         } else {
             this.helipadRotationX -= this.rotationSteps;
         }
-		this.heliPad.transform.Rotate(this.helipadRotationX,0,0);
+		this.heliPad.transform.Rotate(0,this.helipadRotationX,0);
+        this.heliPad2.transform.Rotate(0,this.helipadRotationX,0);
+        this.heliPad3.transform.Rotate(0,this.helipadRotationX,0);
+        this.heliPad4.transform.Rotate(0,this.helipadRotationX,0);
 	}
 }
