@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /**
+ **
  *
+ * how selling sol beers I got a lost surfboard
+ * the ukraine war on the bbc mexico city blues
+ * my dodge challenger is fifteen thousand dollars away
  *
- * Mi LibTech PickUp stick 8.0 esta en un surf shop en fort walton
- * chunky bacon, chunky bacon !!
+ *@author Rolando<rgarro@gmail.com> 
  */
 public class engineController : MonoBehaviour
 {
@@ -47,4 +50,20 @@ public class engineController : MonoBehaviour
         this.heliPad3.transform.Rotate(0,this.helipadRotationX,0);
         this.heliPad4.transform.Rotate(0,this.helipadRotationX,0);
 	}
+
+    void increaseEnginePower(){
+
+    }
+
+    void decreaseEnginePower(){
+
+    }
+
+    void diveLeft(){
+
+    }
+
+    void diveRight(){
+
+    }
 }
