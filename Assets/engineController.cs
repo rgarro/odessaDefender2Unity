@@ -35,12 +35,13 @@ public class engineController : MonoBehaviour
 
     private void rotateHelipad(){
 		//this.playHeliEngineSoundOn();
-        if(this.turnClocwise){
+        /*if(this.turnClocwise){
             //this.heliPad.transform.rotation.z += this.rotationSteps;//threejs way
             this.helipadRotationX += this.rotationSteps;
         } else {
             this.helipadRotationX -= this.rotationSteps;
-        }
+        }*/
+         this.helipadRotationX += this.rotationSteps;
 		this.heliPad.transform.Rotate(0,this.helipadRotationX,0);
         this.heliPad2.transform.Rotate(0,this.helipadRotationX,0);
         this.heliPad3.transform.Rotate(0,this.helipadRotationX,0);
