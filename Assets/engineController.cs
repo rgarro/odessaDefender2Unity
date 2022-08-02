@@ -3,11 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /**
- **
- *
- * how selling sol beers I got a lost surfboard
- * the ukraine war on the bbc mexico city blues
- * my dodge challenger is fifteen thousand dollars away
+ * AC130 Temp Helimover ....
  *
  *@author Rolando<rgarro@gmail.com> 
  */
