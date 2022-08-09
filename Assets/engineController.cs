@@ -5,6 +5,8 @@ using UnityEngine;
 /**
  * AC130 Temp Helimover ....
  *
+ *
+ * 
  *@author Rolando<rgarro@gmail.com> 
  */
 public class engineController : MonoBehaviour
@@ -42,10 +44,11 @@ public class engineController : MonoBehaviour
             this.helipadRotationX -= this.rotationSteps;
         }*/
          this.helipadRotationX += this.rotationSteps;
-		this.heliPad.transform.Rotate(0,this.helipadRotationX,0);
-        this.heliPad2.transform.Rotate(0,this.helipadRotationX,0);
-        this.heliPad3.transform.Rotate(0,this.helipadRotationX,0);
-        this.heliPad4.transform.Rotate(0,this.helipadRotationX,0);
+         transform.localRotation = Quaternion.Euler(x, 0, z);
+		//this.heliPad.transform.Rotate(0,this.helipadRotationX,0);
+        //this.heliPad2.transform.Rotate(0,this.helipadRotationX,0);
+        //this.heliPad3.transform.Rotate(0,this.helipadRotationX,0);
+        //this.heliPad4.transform.Rotate(0,this.helipadRotationX,0);
 	}
 
     void increaseEnginePower(){
