@@ -44,7 +44,7 @@ public class engineController : MonoBehaviour
             this.helipadRotationX -= this.rotationSteps;
         }*/
          this.helipadRotationX += this.rotationSteps;
-         transform.localRotation = Quaternion.Euler(x, 0, z);
+         this.heliPad.transform.localRotation = Quaternion.Euler(this.helipadRotationX, 0, 0);
 		//this.heliPad.transform.Rotate(0,this.helipadRotationX,0);
         //this.heliPad2.transform.Rotate(0,this.helipadRotationX,0);
         //this.heliPad3.transform.Rotate(0,this.helipadRotationX,0);
