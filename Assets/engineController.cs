@@ -16,6 +16,7 @@ public class engineController : MonoBehaviour
     public GameObject heliPad2;
     public GameObject heliPad3;
     public GameObject heliPad4;
+    public GameObject AirPlane;
     public float rotationSteps = 0.87f;
     public bool turnClocwise = true;
     private float helipadRotationX;
@@ -33,6 +34,7 @@ public class engineController : MonoBehaviour
     void Update()
     {
        this.rotateHelipad();
+       this.moveForward();
     }
 
     private void rotateHelipad(){
@@ -43,6 +45,11 @@ public class engineController : MonoBehaviour
         } else {
             this.helipadRotationX -= this.rotationSteps;
         }*/
+        if(this.helipadRotationX < 359){
+            this.helipadRotationX += this.rotationSteps;
+        }else{
+            this.helipadRotationX = 1;
+        }
          this.helipadRotationX += this.rotationSteps;
          //this.heliPad.transform.localRotation = Quaternion.Euler(this.helipadRotationX, 0, 0);
          //this.heliPad2.transform.localRotation = Quaternion.Euler(this.helipadRotationX, 0, 0);
@@ -69,5 +76,9 @@ public class engineController : MonoBehaviour
 
     void diveRight(){
 
+    }
+
+    void moveForward(){
+        this.AirPlane.transform.Translate(Vector3.back * Time.deltaTime);
     }
 }
