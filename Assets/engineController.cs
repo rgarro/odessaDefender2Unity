@@ -44,11 +44,15 @@ public class engineController : MonoBehaviour
             this.helipadRotationX -= this.rotationSteps;
         }*/
          this.helipadRotationX += this.rotationSteps;
-         this.heliPad.transform.localRotation = Quaternion.Euler(this.helipadRotationX, 0, 0);
-		//this.heliPad.transform.Rotate(0,this.helipadRotationX,0);
-        //this.heliPad2.transform.Rotate(0,this.helipadRotationX,0);
-        //this.heliPad3.transform.Rotate(0,this.helipadRotationX,0);
-        //this.heliPad4.transform.Rotate(0,this.helipadRotationX,0);
+         //this.heliPad.transform.localRotation = Quaternion.Euler(this.helipadRotationX, 0, 0);
+         //this.heliPad2.transform.localRotation = Quaternion.Euler(this.helipadRotationX, 0, 0);
+         //this.heliPad3.transform.localRotation = Quaternion.Euler(this.helipadRotationX, 0, 0);
+         //this.heliPad4.transform.localRotation = Quaternion.Euler(this.helipadRotationX, 0, 0);
+
+		this.heliPad.transform.Rotate(0,this.helipadRotationX,0);
+        this.heliPad2.transform.Rotate(0,this.helipadRotationX,0);
+        this.heliPad3.transform.Rotate(0,this.helipadRotationX,0);
+        this.heliPad4.transform.Rotate(0,this.helipadRotationX,0);
 	}
 
     void increaseEnginePower(){

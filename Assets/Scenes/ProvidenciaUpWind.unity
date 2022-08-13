@@ -285,27 +285,27 @@ PrefabInstance:
     - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.6258649
+      value: 0.7003701
       objectReference: {fileID: 0}
     - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.6260411
+      value: -0.7008425
       objectReference: {fileID: 0}
     - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.32882333
+      value: -0.09589581
       objectReference: {fileID: 0}
     - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.32899964
+      value: -0.0954233
       objectReference: {fileID: 0}
     - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 124.56
+      value: 195.55
       objectReference: {fileID: 0}
     - target: {fileID: -3923017253834833362, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -362,15 +362,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 359456304}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f23e9cc49061b374d92ca5160fb8c9cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   heliPad: {fileID: 359456306}
-  heliPad2: {fileID: 0}
-  heliPad3: {fileID: 0}
-  heliPad4: {fileID: 0}
+  heliPad2: {fileID: 1471520350}
+  heliPad3: {fileID: 1043896268}
+  heliPad4: {fileID: 1102370767}
   rotationSteps: 0.87
   turnClocwise: 1
 --- !u!1 &359456306 stripped
@@ -403,7 +403,7 @@ MonoBehaviour:
   buttonY: 40
   boxLabel: Cameras
   FollowIcon: {fileID: 2800000, guid: 154f5d75d104d42aa9cf0b112549c39b, type: 3}
-  FrontIcon: {fileID: 2800000, guid: 77fcb4e7bcf2b4b739015886886040de, type: 3}
+  FrontIcon: {fileID: 2800000, guid: b7f43df58ab0d4e49a88b4040cb972f9, type: 3}
   LeftIcon: {fileID: 0}
   RightIcon: {fileID: 0}
   btnSkin: {fileID: 0}
