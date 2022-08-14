@@ -195,7 +195,7 @@ Transform:
   m_GameObject: {fileID: 104931540}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -174.4, y: 0, z: -298}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -0.0849053, y: 1, z: 0.52392}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -374,6 +374,8 @@ MonoBehaviour:
   AirPlane: {fileID: 359456304}
   rotationSteps: 0.87
   turnClocwise: 1
+  yardsPerSecond: 2
+  AirPlaneEngineSoundClip: {fileID: 0}
 --- !u!1 &359456306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3274875305005976306, guid: 0eb3064c7459f854a911616244dd1a90,
@@ -544,6 +546,8 @@ MonoBehaviour:
   AirPlane: {fileID: 0}
   rotationSteps: 0.87
   turnClocwise: 1
+  yardsPerSecond: 2
+  AirPlaneEngineSoundClip: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
