@@ -20,14 +20,22 @@ public class engineController : MonoBehaviour
     public float rotationSteps = 0.87f;
     public bool turnClocwise = true;
     private float helipadRotationX;
+    public float yardsPerSecond = 2.0f;
     //public float engineY = 0;
     //public float engineZ = 0;
+    private AudioSource soundPlayer;
+    public AudioClip AirPlaneEngineSoundClip;
 
     // Start is called before the first frame update
     void Start()
     {
         //this.anim = GetComponent<Animator>();
         this.helipadRotationX = this.heliPad.transform.rotation.x;
+
+        //Engine Sound
+        this.soundPlayer = GetComponent<AudioSource> ();
+        this.soundPlayer.volume = 0.2F;
+        this.playEngineSound();
     }
 
     // Update is called once per frame
@@ -38,29 +46,22 @@ public class engineController : MonoBehaviour
     }
 
     private void rotateHelipad(){
-		//this.playHeliEngineSoundOn();
-        /*if(this.turnClocwise){
-            //this.heliPad.transform.rotation.z += this.rotationSteps;//threejs way
-            this.helipadRotationX += this.rotationSteps;
-        } else {
-            this.helipadRotationX -= this.rotationSteps;
-        }*/
+		//this.playEngineSound();
         if(this.helipadRotationX < 359){
             this.helipadRotationX += this.rotationSteps;
         }else{
             this.helipadRotationX = 1;
         }
          this.helipadRotationX += this.rotationSteps;
-         //this.heliPad.transform.localRotation = Quaternion.Euler(this.helipadRotationX, 0, 0);
-         //this.heliPad2.transform.localRotation = Quaternion.Euler(this.helipadRotationX, 0, 0);
-         //this.heliPad3.transform.localRotation = Quaternion.Euler(this.helipadRotationX, 0, 0);
-         //this.heliPad4.transform.localRotation = Quaternion.Euler(this.helipadRotationX, 0, 0);
-
 		this.heliPad.transform.Rotate(0,this.helipadRotationX,0);
         this.heliPad2.transform.Rotate(0,this.helipadRotationX,0);
         this.heliPad3.transform.Rotate(0,this.helipadRotationX,0);
         this.heliPad4.transform.Rotate(0,this.helipadRotationX,0);
 	}
+
+    void playEngineSound(){
+        
+    }
 
     void increaseEnginePower(){
 
@@ -79,6 +80,6 @@ public class engineController : MonoBehaviour
     }
 
     void moveForward(){
-        this.AirPlane.transform.Translate(Vector3.back * Time.deltaTime);
+        this.AirPlane.transform.Translate(Vector3.back * (Time.deltaTime * this.yardsPerSecond));
     }
 }
