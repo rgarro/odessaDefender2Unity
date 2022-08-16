@@ -60,7 +60,10 @@ public class engineController : MonoBehaviour
 	}
 
     void playEngineSound(){
-        
+         this.soundPlayer.clip = this.AirPlaneEngineSoundClip;
+        if (!this.soundPlayer.isPlaying) {
+            this.soundPlayer.Play ();
+        }
     }
 
     void increaseEnginePower(){
