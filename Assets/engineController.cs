@@ -3,10 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /**
- * AC130 Temp Helimover ....
+ * :: AC130  Helimover ::
+ *           _\ _~-\___
+ *   =  = ==(____AA____D
+ *               \_____\___________________,-~~~~~~~`-.._
+ *               /     o O o o o o O O o o o o o o O o  |\_
+ *               `~-.__        ___..----..                  )
+ *                     `---~~\___________/------------`````
+ *                     =  ===(_________D
+ * Se robaron un avion los narcos en argentina un dc9 frances peruana era la linea
+ * Producing my Slingshot Turbine Surfkite
+ * En tierras de Nayarit fue donde cayo el avion iba pa guadalajara procedente de obregon
+ * Aqui cayo la paloma en la laguna de nuzco porque no pudo bajar en la pista de acapulco ..
+ * En el avion de la muerte se subieron aquel dia ...
+ * Los amigos de Mi Padre me admiran y me respetan en 2 y 300 metros levanto las avionetas
+ * Escapaste de chicago y tambien de nuevayork aqui me llega un reporte te robaste un avion ..
+ * en sanjose costarica lo tomaron prisionero ya se extendio la noticia por todo el mundo entero asi el corrido comienza del senor caro quintero
+ * ruper alvarado y nelson hofman son violadores expuestos en publico ..
  *
- *
- * 
  *@author Rolando<rgarro@gmail.com> 
  */
 public class engineController : MonoBehaviour
@@ -59,6 +73,10 @@ public class engineController : MonoBehaviour
         this.heliPad4.transform.Rotate(0,this.helipadRotationX,0);
 	}
 
+    void OnGUI(){
+
+    }
+
     void playEngineSound(){
          this.soundPlayer.clip = this.AirPlaneEngineSoundClip;
         if (!this.soundPlayer.isPlaying) {
@@ -84,5 +102,29 @@ public class engineController : MonoBehaviour
 
     void moveForward(){
         this.AirPlane.transform.Translate(Vector3.back * (Time.deltaTime * this.yardsPerSecond));
+    }
+
+    void joystickControls(){
+        if (Input.GetKey("up"))
+        {
+           // Debug.Log("up arrow: "+ this.helicopter.transform.eulerAngles.x);
+            //this.moveForward();
+        }
+
+        if (Input.GetKey("down"))
+        {
+            //Debug.Log("down arrow: " + this.helicopter.transform.eulerAngles.x);
+            //this.moveBackward();
+        }
+         if (Input.GetKey("left")){
+             this.diveLeft();
+         }
+        if (Input.GetKey("right")){
+            this.diveRight();
+         }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            //this.doRestart();
+        }
     }
 }
