@@ -377,6 +377,9 @@ MonoBehaviour:
   yardsPerSecond: 2
   AirPlaneEngineSoundClip: {fileID: 8300000, guid: df779dca6b2914ada8df7eeaad8c2243,
     type: 3}
+  enginePowerSliderYpos: 121
+  enginePowerSliderXpos: 221
+  engineThrottleLabel: Engine Power
 --- !u!1 &359456306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3274875305005976306, guid: 0eb3064c7459f854a911616244dd1a90,
@@ -619,7 +622,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798663952}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6d52c5405fdfd4613ac369c77a1933d9, type: 3}
   m_Name: 
@@ -631,7 +634,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 798663952}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f23e9cc49061b374d92ca5160fb8c9cc, type: 3}
   m_Name: 
@@ -645,6 +648,9 @@ MonoBehaviour:
   turnClocwise: 1
   yardsPerSecond: 2
   AirPlaneEngineSoundClip: {fileID: 0}
+  enginePowerSliderYpos: 25
+  enginePowerSliderXpos: 25
+  engineThrottleLabel: Engine Power
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

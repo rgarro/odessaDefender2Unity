@@ -11,15 +11,15 @@ using UnityEngine;
  *               `~-.__        ___..----..                  )
  *                     `---~~\___________/------------`````
  *                     =  ===(_________D
+ * ::: Producing my Slingshot Turbine Surfkite :::
  * Se robaron un avion los narcos en argentina un dc9 frances peruana era la linea
- * Producing my Slingshot Turbine Surfkite
  * En tierras de Nayarit fue donde cayo el avion iba pa guadalajara procedente de obregon
  * Aqui cayo la paloma en la laguna de nuzco porque no pudo bajar en la pista de acapulco ..
  * En el avion de la muerte se subieron aquel dia ...
  * Los amigos de Mi Padre me admiran y me respetan en 2 y 300 metros levanto las avionetas
  * Escapaste de chicago y tambien de nuevayork aqui me llega un reporte te robaste un avion ..
  * en sanjose costarica lo tomaron prisionero ya se extendio la noticia por todo el mundo entero asi el corrido comienza del senor caro quintero
- * ruper alvarado y nelson hofman son violadores expuestos en publico ..
+ * 
  *
  *@author Rolando<rgarro@gmail.com> 
  */
@@ -39,6 +39,9 @@ public class engineController : MonoBehaviour
     //public float engineZ = 0;
     private AudioSource soundPlayer;
     public AudioClip AirPlaneEngineSoundClip;
+     public int enginePowerSliderYpos = 25;
+    public int enginePowerSliderXpos = 25;
+    public string engineThrottleLabel = "Engine Power";
 
     // Start is called before the first frame update
     void Start()
@@ -74,7 +77,9 @@ public class engineController : MonoBehaviour
 	}
 
     void OnGUI(){
-
+         // Debug.Log("Helicopter X: "+ this.helicopter.transform.eulerAngles.x );
+        GUI.Box(new Rect(this.enginePowerSliderXpos - 20,this.enginePowerSliderYpos - 15,275,30), this.engineThrottleLabel);
+        this.yardsPerSecond = GUI.HorizontalSlider(new Rect(this.enginePowerSliderXpos, this.enginePowerSliderYpos, 250, 50), this.yardsPerSecond, 2.0F, 10.0F);
     }
 
     void playEngineSound(){
