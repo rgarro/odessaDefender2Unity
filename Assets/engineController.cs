@@ -60,6 +60,7 @@ public class engineController : MonoBehaviour
     {
        this.rotateHelipad();
        this.moveForward();
+       this.joystickControls();
     }
 
     private void rotateHelipad(){
@@ -102,7 +103,8 @@ public class engineController : MonoBehaviour
     }
 
     void diveRight(){
-
+        Debug.Log("diving right");
+        this.AirPlane.transform.Translate(Vector3.right * Time.deltaTime);
     }
 
     void moveForward(){
