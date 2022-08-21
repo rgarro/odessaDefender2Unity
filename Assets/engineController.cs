@@ -42,6 +42,9 @@ public class engineController : MonoBehaviour
      public int enginePowerSliderYpos = 25;
     public int enginePowerSliderXpos = 25;
     public string engineThrottleLabel = "Engine Power";
+    public float diveCurveAngleZ = 1.00f;
+
+    private bool isDived = false;
 
     // Start is called before the first frame update
     void Start()
@@ -99,16 +102,30 @@ public class engineController : MonoBehaviour
     }
 
     void diveLeft(){
-
+        //Debug.Log("diving left");
+        this.AirPlane.transform.Translate(Vector3.left * Time.deltaTime);
+        if(!this.isDived){
+            this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ*-1);
+            this.isDived = true;
+        }
     }
 
     void diveRight(){
-        Debug.Log("diving right");
+        //Debug.Log("diving right");
         this.AirPlane.transform.Translate(Vector3.right * Time.deltaTime);
+        if(!this.isDived){
+            this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ);
+            this.isDived = true;
+        }
     }
 
     void moveForward(){
         this.AirPlane.transform.Translate(Vector3.back * (Time.deltaTime * this.yardsPerSecond));
+    }
+
+    void stabilizePlane(){
+        this.AirPlane.transform.Rotate(0,0,0);
+        this.isDived = false;
     }
 
     void joystickControls(){
@@ -132,6 +149,10 @@ public class engineController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             //this.doRestart();
+        }
+        if (Input.GetKeyUp("left") OR Input.GetKeyUp("right"))
+        {
+            this.stabilizePlane();
         }
     }
 }
