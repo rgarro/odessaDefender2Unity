@@ -150,8 +150,10 @@ public class engineController : MonoBehaviour
         {
             //this.doRestart();
         }
-        if (Input.GetKeyUp("left") OR Input.GetKeyUp("right"))
+
+        if (Input.GetKeyUp("left") || Input.GetKeyUp("right"))
         {
+            Debug.Log("here stabilize ");
             this.stabilizePlane();
         }
     }
