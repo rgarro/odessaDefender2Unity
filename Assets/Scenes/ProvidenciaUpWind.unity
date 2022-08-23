@@ -225,7 +225,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 144.9
+      value: 657
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -380,7 +380,7 @@ MonoBehaviour:
   enginePowerSliderYpos: 121
   enginePowerSliderXpos: 221
   engineThrottleLabel: Engine Power
-  diveCurveAngleZ: 2.89
+  diveCurveAngleZ: 3.95
 --- !u!1 &359456306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3274875305005976306, guid: 0eb3064c7459f854a911616244dd1a90,
