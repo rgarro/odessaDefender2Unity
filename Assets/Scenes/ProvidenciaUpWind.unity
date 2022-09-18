@@ -893,6 +893,10 @@ MonoBehaviour:
   IconY: 10
   IconWidth: 40
   IconHeight: 40
+  windowX: 103.21
+  windowY: 163.3
+  windowWidth: 300
+  windowHeight: 300
 --- !u!82 &1936967146
 AudioSource:
   m_ObjectHideFlags: 0
