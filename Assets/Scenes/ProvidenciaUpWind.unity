@@ -598,7 +598,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 3.536823e-38, y: 2.7043422e+23, z: NaN, w: 1.0680067e+11}
+  m_BoundingSphereOverride: {x: 4.5915e-41, y: 1.43e-43, z: 0, w: 2.2e-44}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -889,8 +889,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RestartIcon: {fileID: 2800000, guid: 3b773cfbbce0e4baf97c65b81c0fb32f, type: 3}
-  IconX: 10
-  IconY: 10
+  IconX: 11
+  IconY: 11
   IconWidth: 40
   IconHeight: 40
   windowX: 103.21
