@@ -12,13 +12,8 @@ using UnityEngine;
  *                     `---~~\___________/------------`````
  *                     =  ===(_________D
  * ::: Producing my Slingshot Turbine Surfkite :::
- * Se robaron un avion los narcos en argentina un dc9 frances peruana era la linea
- * En tierras de Nayarit fue donde cayo el avion iba pa guadalajara procedente de obregon
- * Aqui cayo la paloma en la laguna de nuzco porque no pudo bajar en la pista de acapulco ..
- * En el avion de la muerte se subieron aquel dia ...
- * Los amigos de Mi Padre me admiran y me respetan en 2 y 300 metros levanto las avionetas
- * Escapaste de chicago y tambien de nuevayork aqui me llega un reporte te robaste un avion ..
- * en sanjose costarica lo tomaron prisionero ya se extendio la noticia por todo el mundo entero asi el corrido comienza del senor caro quintero
+ * Se robaron un avion los narcos en argentina ...
+ * 
  * 
  *
  *@author Rolando<rgarro@gmail.com> 
@@ -105,7 +100,7 @@ public class engineController : MonoBehaviour
         Debug.Log("diving left");
         this.AirPlane.transform.Translate(Vector3.left * Time.deltaTime);
         if(!this.isDived){
-            this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ*-1);
+            this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ);
             this.isDived = true;
         }
     }
@@ -114,7 +109,7 @@ public class engineController : MonoBehaviour
         Debug.Log("diving right");
         this.AirPlane.transform.Translate(Vector3.right * Time.deltaTime);
         if(!this.isDived){
-            this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ);
+            this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ*-1);
             this.isDived = true;
         }
     }

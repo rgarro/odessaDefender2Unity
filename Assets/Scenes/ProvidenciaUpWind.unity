@@ -378,9 +378,9 @@ MonoBehaviour:
   heliPad3: {fileID: 1043896268}
   heliPad4: {fileID: 1102370767}
   AirPlane: {fileID: 359456304}
-  rotationSteps: 0.45
+  rotationSteps: 0.48
   turnClocwise: 1
-  yardsPerSecond: 3
+  yardsPerSecond: 3.13
   AirPlaneEngineSoundClip: {fileID: 8300000, guid: df779dca6b2914ada8df7eeaad8c2243,
     type: 3}
   enginePowerSliderYpos: 121
