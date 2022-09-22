@@ -38,6 +38,7 @@ public class engineController : MonoBehaviour
     public int enginePowerSliderXpos = 25;
     public string engineThrottleLabel = "Engine Power";
     public float diveCurveAngleZ = 1.00f;
+    public float sideDiveAccelerationRate = 2.00f;
 
     private bool isDived = false;
 
@@ -98,20 +99,20 @@ public class engineController : MonoBehaviour
 
     void diveLeft(){
         Debug.Log("diving left");
-        this.AirPlane.transform.Translate(Vector3.left * Time.deltaTime);
-        if(!this.isDived){
+        this.AirPlane.transform.Translate(Vector3.left * Time.deltaTime* (this.yardsPerSecond/this.sideDiveAccelerationRate));
+        /*if(!this.isDived){
             this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ);
             this.isDived = true;
-        }
+        }*/
     }
 
     void diveRight(){
         Debug.Log("diving right");
-        this.AirPlane.transform.Translate(Vector3.right * Time.deltaTime);
-        if(!this.isDived){
+        this.AirPlane.transform.Translate(Vector3.right * Time.deltaTime* (this.yardsPerSecond/this.sideDiveAccelerationRate));
+        /*if(!this.isDived){
             this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ*-1);
             this.isDived = true;
-        }
+        }*/
     }
 
     void moveForward(){

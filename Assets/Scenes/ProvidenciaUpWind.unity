@@ -387,6 +387,7 @@ MonoBehaviour:
   enginePowerSliderXpos: 221
   engineThrottleLabel: Engine Power
   diveCurveAngleZ: 3.95
+  sideDiveAccelerationRate: 1.51
 --- !u!1 &359456306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3274875305005976306, guid: 0eb3064c7459f854a911616244dd1a90,
@@ -659,6 +660,7 @@ MonoBehaviour:
   enginePowerSliderXpos: 25
   engineThrottleLabel: Engine Power
   diveCurveAngleZ: 1
+  sideDiveAccelerationRate: 2
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,6 +857,7 @@ GameObject:
   - component: {fileID: 1936967145}
   - component: {fileID: 1936967147}
   - component: {fileID: 1936967146}
+  - component: {fileID: 1936967148}
   m_Layer: 0
   m_Name: BatComputer
   m_TagString: Untagged
@@ -1011,6 +1014,93 @@ MonoBehaviour:
   IconY: 10
   IconWidth: 40
   IconHeight: 40
+--- !u!114 &1936967148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1936967143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1abb39db6c99440148a3a3570d00ae92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  windowX: 10
+  windowY: 65
+  windowHeight: 170
+  windowWidth: 150
+  instructionsString: "Left Right Arrow Keys \n\nTurn Turret: F, G\n\nElevation: up
+    R down T\n\nShoot: spacebar"
+  labelString: Instructions
+  marginVal: 25
+  style:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_ScaledBackgrounds: []
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 0}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
 --- !u!1 &1985704188
 GameObject:
   m_ObjectHideFlags: 0
