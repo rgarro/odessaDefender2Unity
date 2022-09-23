@@ -221,7 +221,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.93
+      value: 3.17
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -387,7 +387,7 @@ MonoBehaviour:
   enginePowerSliderXpos: 221
   engineThrottleLabel: Engine Power
   diveCurveAngleZ: 3.95
-  sideDiveAccelerationRate: 1.51
+  sideDiveAccelerationRate: 1.52
 --- !u!1 &359456306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3274875305005976306, guid: 0eb3064c7459f854a911616244dd1a90,
@@ -408,7 +408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   followingCamera: {fileID: 1985704188}
   frontCamera: {fileID: 963194225}
-  leftCamera: {fileID: 0}
+  leftCamera: {fileID: 1738255429}
   rightCamera: {fileID: 0}
   boxWidth: 265
   boxHeight: 90
@@ -892,7 +892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RestartIcon: {fileID: 2800000, guid: 3b773cfbbce0e4baf97c65b81c0fb32f, type: 3}
-  IconX: 11
+  IconX: 12
   IconY: 11
   IconWidth: 40
   IconHeight: 40
