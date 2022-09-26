@@ -538,6 +538,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa941d3803c4e4d69ab647a8a2cb5ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Gun: {fileID: 359456311}
+--- !u!1 &359456311 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -153716940994731797, guid: 0eb3064c7459f854a911616244dd1a90,
+    type: 3}
+  m_PrefabInstance: {fileID: 359456303}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
