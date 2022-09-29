@@ -416,7 +416,7 @@ MonoBehaviour:
   buttonWidth: 40
   buttonHeight: 40
   buttonY: 40
-  boxLabel: Cameras
+  boxLabel: View Cameras
   FollowIcon: {fileID: 2800000, guid: 154f5d75d104d42aa9cf0b112549c39b, type: 3}
   FrontIcon: {fileID: 2800000, guid: b7f43df58ab0d4e49a88b4040cb972f9, type: 3}
   LeftIcon: {fileID: 2800000, guid: efa7b24e95ea64991bee2ba033f18fd1, type: 3}
@@ -1220,7 +1220,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2043502579
 Transform:
   m_ObjectHideFlags: 0
