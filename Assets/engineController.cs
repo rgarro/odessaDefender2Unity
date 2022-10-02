@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//using System.Diagnostics;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -98,21 +99,22 @@ public class engineController : MonoBehaviour
     }
 
     void diveLeft(){
-        //Debug.Log("diving left");
+        Debug.Log("diving left");
         this.AirPlane.transform.Translate(Vector3.right * Time.deltaTime* (this.yardsPerSecond/this.sideDiveAccelerationRate));
         if(!this.isDived){
             this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ);
             this.isDived = true;
+            Debug.Log("rotating body left "+this.isDived);
         }
     }
 
     void diveRight(){
         //Debug.Log("diving right");
         this.AirPlane.transform.Translate(Vector3.left * Time.deltaTime* (this.yardsPerSecond/this.sideDiveAccelerationRate));
-        if(!this.isDived){
+       /* if(!this.isDived){
             this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ*-1);
             this.isDived = true;
-        }
+        }*/
     }
 
     void moveForward(){
@@ -155,14 +157,16 @@ public class engineController : MonoBehaviour
 
         if (Input.GetKeyUp("left"))
         {
-            this.isDived = false;
-            this.diveRight();
+            Debug.Log("left up");
+            //this.isDived = false;
+            //this.diveRight();
         }
 
         if (Input.GetKeyUp("right"))
         {
-            this.isDived = false;
-            this.diveLeft();
+            Debug.Log("right  up");
+            //this.isDived = false;
+            //this.diveLeft();
         }
     }
 }
