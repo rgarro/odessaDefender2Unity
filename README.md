@@ -22,7 +22,7 @@ Les subieron a la nave
 Volaron a su destino
 Sin que lo impidiera nadie
 Alla todo estaba listo
-Aplacaron hasta el aire .. </sub>
+Aplacaron hasta el aire .... </sub>
 
 Download Model: https://sketchfab.com/3d-models/lockheed-ac-130-c90e77e03f9945ab85cc65acf29225e0
 

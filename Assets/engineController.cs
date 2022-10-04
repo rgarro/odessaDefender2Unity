@@ -109,7 +109,7 @@ public class engineController : MonoBehaviour
     }
 
     void diveRight(){
-        //Debug.Log("diving right");
+        Debug.Log("diving right");
         this.AirPlane.transform.Translate(Vector3.left * Time.deltaTime* (this.yardsPerSecond/this.sideDiveAccelerationRate));
        /* if(!this.isDived){
             this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ*-1);
