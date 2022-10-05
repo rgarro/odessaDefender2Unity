@@ -42,6 +42,7 @@ public class engineController : MonoBehaviour
     public float sideDiveAccelerationRate = 2.00f;
 
     private bool isDived = false;
+    private bool isDivedr = false;
 
     // Start is called before the first frame update
     void Start()
@@ -102,7 +103,7 @@ public class engineController : MonoBehaviour
         Debug.Log("diving left");
         this.AirPlane.transform.Translate(Vector3.right * Time.deltaTime* (this.yardsPerSecond/this.sideDiveAccelerationRate));
         if(!this.isDived){
-            this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ);
+            this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ*-1);
             this.isDived = true;
             Debug.Log("rotating body left "+this.isDived);
         }
@@ -158,8 +159,10 @@ public class engineController : MonoBehaviour
         if (Input.GetKeyUp("left"))
         {
             Debug.Log("left up");
-            //this.isDived = false;
-            //this.diveRight();
+            if(this.isDived){
+                this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ);
+                this.isDived = false;
+            }
         }
 
         if (Input.GetKeyUp("right"))
