@@ -117,7 +117,10 @@ public class engineController : MonoBehaviour
             this.isDived = true;
         }
     }
+    void increaseEleveation(){
 
+    }
+    
     void moveForward(){
         this.AirPlane.transform.Translate(Vector3.back * (Time.deltaTime * this.yardsPerSecond));
     }
