@@ -1,4 +1,6 @@
-﻿//using System.Diagnostics;
+﻿using System;
+using System.Globalization;
+//using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -40,7 +42,8 @@ public class engineController : MonoBehaviour
     public string engineThrottleLabel = "Engine Power";
     public float diveCurveAngleZ = 1.00f;
     public float sideDiveAccelerationRate = 2.00f;
-
+    public float minAltitude = 3.38f;
+    public float maxAltitude = 15.35f;
     private bool isDived = false;
     private bool isDivedr = false;
 
@@ -118,9 +121,11 @@ public class engineController : MonoBehaviour
         }
     }
     void increaseEleveation(){
+        if(this.AirPlane.transform.position.y < this.maxAltitude){
 
+        }
     }
-    
+
     void moveForward(){
         this.AirPlane.transform.Translate(Vector3.back * (Time.deltaTime * this.yardsPerSecond));
     }
@@ -134,7 +139,7 @@ public class engineController : MonoBehaviour
         if (Input.GetKey("up"))
         {
            // Debug.Log("up arrow: "+ this.helicopter.transform.eulerAngles.x);
-            //this.moveForward();
+            this.increaseEleveation();
         }
 
         if (Input.GetKey("down"))
