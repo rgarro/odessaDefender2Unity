@@ -226,7 +226,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.22
+      value: 3.66
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -388,6 +388,9 @@ MonoBehaviour:
   engineThrottleLabel: Engine Power
   diveCurveAngleZ: 3.95
   sideDiveAccelerationRate: 1.52
+  minAltitude: 3.38
+  maxAltitude: 15.35
+  elevationSteps: 0.05
 --- !u!1 &359456306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3274875305005976306, guid: 0eb3064c7459f854a911616244dd1a90,
@@ -680,6 +683,9 @@ MonoBehaviour:
   engineThrottleLabel: Engine Power
   diveCurveAngleZ: 1
   sideDiveAccelerationRate: 2
+  minAltitude: 3.38
+  maxAltitude: 15.35
+  elevationSteps: 0.05
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

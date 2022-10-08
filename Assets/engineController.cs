@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Threading;
+using System;
 using System.Globalization;
 //using System.Diagnostics;
 using System.Collections;
@@ -44,6 +45,7 @@ public class engineController : MonoBehaviour
     public float sideDiveAccelerationRate = 2.00f;
     public float minAltitude = 3.38f;
     public float maxAltitude = 15.35f;
+    public float elevationSteps = 0.05f;
     private bool isDived = false;
     private bool isDivedr = false;
 
@@ -113,7 +115,7 @@ public class engineController : MonoBehaviour
     }
 
     void diveRight(){
-        Debug.Log("diving right");
+        //Debug.Log("diving right");
         this.AirPlane.transform.Translate(Vector3.left * Time.deltaTime* (this.yardsPerSecond/this.sideDiveAccelerationRate));
         if(!this.isDived){
             this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ);
@@ -121,8 +123,8 @@ public class engineController : MonoBehaviour
         }
     }
     void increaseEleveation(){
-        if(this.AirPlane.transform.position.y < this.maxAltitude){
-
+        if(this.AirPlane.transform.position.y < this.maxAltitude && this.AirPlane.transform.position.y > this.minAltitude){
+            this.AirPlane.transform.position.y = this.AirPlane.transform.position.y * this.elevationSteps*Time.deltaTime;
         }
     }
 
@@ -166,7 +168,7 @@ public class engineController : MonoBehaviour
 
         if (Input.GetKeyUp("left"))
         {
-            Debug.Log("left up");
+            //Debug.Log("left up");
             if(this.isDived){
                 this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ);
                 this.isDived = false;
@@ -175,7 +177,7 @@ public class engineController : MonoBehaviour
 
         if (Input.GetKeyUp("right"))
         {
-            Debug.Log("right  up"+this.isDived);
+            //Debug.Log("right  up"+this.isDived);
             if(this.isDived){
                 this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ*-1);
                 this.isDived = false;
