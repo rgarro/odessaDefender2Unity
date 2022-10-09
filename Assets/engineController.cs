@@ -124,7 +124,7 @@ public class engineController : MonoBehaviour
     }
     void increaseEleveation(){
         if(this.AirPlane.transform.position.y < this.maxAltitude && this.AirPlane.transform.position.y > this.minAltitude){
-            this.AirPlane.transform.position.y = this.AirPlane.transform.position.y * this.elevationSteps*Time.deltaTime;
+//            this.AirPlane.transform.position.y = this.AirPlane.transform.position.y * this.elevationSteps*Time.deltaTime;
         }
     }
 
