@@ -561,11 +561,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   helicopter: {fileID: 359456304}
-  frontLabelXpos: 25
+  frontLabelXpos: 582
   frontLabelYpos: 25
-  leftLabelXpos: 800
+  leftLabelXpos: 500
   leftLabelYpos: 25
-  rightLabelXpos: 400
+  rightLabelXpos: 645
   rightLabelYpos: 25
 --- !u!1 &705507993
 GameObject:
