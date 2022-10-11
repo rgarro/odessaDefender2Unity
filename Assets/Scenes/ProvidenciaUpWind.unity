@@ -1074,8 +1074,8 @@ MonoBehaviour:
   windowY: 65
   windowHeight: 170
   windowWidth: 150
-  instructionsString: "Left Right Arrow Keys \n\nTurn Turret: F, G\n\nElevation: up
-    R down T\n\nShoot: spacebar"
+  instructionsString: "Left Right Arrow Keys \n\nTurn Turret: F, G\n\nElevation: Up
+    R Down T\n\nShoot: spacebar"
   labelString: Instructions
   marginVal: 25
   style:
