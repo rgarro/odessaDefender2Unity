@@ -16,7 +16,9 @@ using UnityEngine;
  *                     `---~~\___________/------------`````
  *                     =  ===(_________D
  * ::: Producing my Slingshot Turbine Surfkite :::
- *    Se robaron un avion los narcos en Argentina ...
+ *    Se robaron un avion los narcos en Argentina 
+ * Un dc9 Frances, peruana era la linea, lo llevaron a colombia
+ *  pa llenarlo de la fina ...
  * 
  * 
  *
@@ -97,7 +99,9 @@ public class engineController : MonoBehaviour
     }
 
     void increaseEnginePower(){
-
+        if(this.AirPlane.transform.position.y < this.maxAltitude && this.AirPlane.transform.position.y > this.minAltitude){
+            this.AirPlane.transform.Translate(Vector3.down * (Time.deltaTime * this.yardsPerSecond));
+        }
     }
 
     void decreaseEnginePower(){
