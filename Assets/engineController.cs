@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /**
+ * The Dharmakaya of my Slingshot Mixer Surfboard
  * :: AC130  Helimover ::
  *           _\ _~-\___
  *   =  = ==(____AA____D
@@ -23,7 +24,7 @@ using UnityEngine;
  * 
  * 
  *
- *@author Rolando<rgarro@gmail.com> 
+ *@author Rolando<rolando@emptyart.xyz> 
  */
 public class engineController : MonoBehaviour
 {
