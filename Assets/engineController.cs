@@ -1,4 +1,5 @@
-﻿using System.Threading;
+﻿using System.Runtime.CompilerServices;
+using System.Threading;
 using System;
 using System.Globalization;
 //using System.Diagnostics;
@@ -50,6 +51,9 @@ public class engineController : MonoBehaviour
     public float elevationSteps = 0.05f;
     private bool isDived = false;
     private bool isDivedr = false;
+    private bool isElevated = false;
+    public float elevationCurveAngleX = 3.25f;
+    public float descendingCurveAngleX = -3.25f;
 
     // Start is called before the first frame update
     void Start()
@@ -130,6 +134,10 @@ public class engineController : MonoBehaviour
         if(this.AirPlane.transform.position.y < this.maxAltitude && this.AirPlane.transform.position.y > this.minAltitude){
             //this.AirPlane.transform.position.y = this.AirPlane.transform.position.y * this.elevationSteps*Time.deltaTime;
             this.AirPlane.transform.Translate(Vector3.up * (Time.deltaTime * this.yardsPerSecond));
+            if(!this.isElevated){
+            this.AirPlane.transform.Rotate(this.elevationCurveAngleX,0,0);
+            this.isElevated = true;
+        }
         }
     }
 
@@ -186,6 +194,15 @@ public class engineController : MonoBehaviour
             if(this.isDived){
                 this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ*-1);
                 this.isDived = false;
+            }
+        }
+
+         if (Input.GetKeyUp("up"))
+        {
+            Debug.Log("up up");
+            if(this.isElevated){
+                this.AirPlane.transform.Rotate(0,0,0);
+                this.isElevated = false;
             }
         }
     }
