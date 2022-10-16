@@ -53,6 +53,7 @@ public class engineController : MonoBehaviour
     private bool isDived = false;
     private bool isDivedr = false;
     private bool isElevated = false;
+    private bool isdElevated = false;
     public float elevationCurveAngleX = 3.25f;
     public float descendingCurveAngleX = -3.25f;
 
@@ -104,13 +105,13 @@ public class engineController : MonoBehaviour
     }
 
     void increaseEnginePower(){
-        if(this.AirPlane.transform.position.y < this.maxAltitude && this.AirPlane.transform.position.y > this.minAltitude){
+       /* if(this.AirPlane.transform.position.y < this.maxAltitude && this.AirPlane.transform.position.y > this.minAltitude){
             this.AirPlane.transform.Translate(Vector3.down * (Time.deltaTime * this.yardsPerSecond));
-        }
+        }*/
     }
 
     void decreaseEnginePower(){
-
+        
     }
 
     void diveLeft(){
@@ -136,9 +137,20 @@ public class engineController : MonoBehaviour
             //this.AirPlane.transform.position.y = this.AirPlane.transform.position.y * this.elevationSteps*Time.deltaTime;
             this.AirPlane.transform.Translate(Vector3.up * (Time.deltaTime * this.yardsPerSecond));
             if(!this.isElevated){
-            this.AirPlane.transform.Rotate(this.elevationCurveAngleX,0,0);
-            this.isElevated = true;
+                this.AirPlane.transform.Rotate(this.elevationCurveAngleX,0,0);
+                this.isElevated = true;
+            }
         }
+    }
+
+    void decreaseElevation(){
+        if(this.AirPlane.transform.position.y < this.maxAltitude && this.AirPlane.transform.position.y > this.minAltitude){
+            //this.AirPlane.transform.position.y = this.AirPlane.transform.position.y * this.elevationSteps*Time.deltaTime;
+            this.AirPlane.transform.Translate(Vector3.down * (Time.deltaTime * this.yardsPerSecond));
+            if(!this.isdElevated){
+                this.AirPlane.transform.Rotate(this.elevationCurveAngleX*-1,0,0);
+                this.isdElevated = true;
+            }
         }
     }
 
@@ -161,7 +173,7 @@ public class engineController : MonoBehaviour
         if (Input.GetKey("down"))
         {
             //Debug.Log("down arrow: " + this.helicopter.transform.eulerAngles.x);
-            //this.moveBackward();
+            this.decreaseElevation();
         }
          if (Input.GetKey("left")){
              this.diveLeft();
