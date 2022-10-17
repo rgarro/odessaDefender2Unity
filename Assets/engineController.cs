@@ -137,7 +137,7 @@ public class engineController : MonoBehaviour
             //this.AirPlane.transform.position.y = this.AirPlane.transform.position.y * this.elevationSteps*Time.deltaTime;
             this.AirPlane.transform.Translate(Vector3.up * (Time.deltaTime * this.yardsPerSecond));
             if(!this.isElevated){
-                this.AirPlane.transform.Rotate(this.elevationCurveAngleX,0,0);
+                this.AirPlane.transform.Rotate(this.elevationCurveAngleX,0,0);//step this elevation later
                 this.isElevated = true;
             }
         }
@@ -148,7 +148,7 @@ public class engineController : MonoBehaviour
             //this.AirPlane.transform.position.y = this.AirPlane.transform.position.y * this.elevationSteps*Time.deltaTime;
             this.AirPlane.transform.Translate(Vector3.down * (Time.deltaTime * this.yardsPerSecond));
             if(!this.isdElevated){
-                this.AirPlane.transform.Rotate(this.elevationCurveAngleX*-1,0,0);
+                this.AirPlane.transform.Rotate(this.descendingCurveAngleX,0,0);//step this later
                 this.isdElevated = true;
             }
         }
@@ -212,11 +212,20 @@ public class engineController : MonoBehaviour
 
          if (Input.GetKeyUp("up"))
         {
-            Debug.Log("up up");
+            //Debug.Log("up up");
             if(this.isElevated){
-                this.AirPlane.transform.Rotate(0,0,0);
+                this.AirPlane.transform.Rotate(this.elevationCurveAngleX*-1,0,0);
                 this.isElevated = false;
             }
         }
+        if (Input.GetKeyUp("down"))
+        {
+            //Debug.Log("up up");
+            if(this.isdElevated){
+                this.AirPlane.transform.Rotate(this.descendingCurveAngleX*-1,0,0);
+                this.isdElevated = false;
+            }
+        }
+
     }
 }

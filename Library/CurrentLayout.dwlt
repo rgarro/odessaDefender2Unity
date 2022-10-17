@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 344}
   m_MaxSize: {x: 4002, y: 8044}
   vertical: 1
-  controlID: 14
+  controlID: 84
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 494}
   m_MaxSize: {x: 10004, y: 14044}
   vertical: 1
-  controlID: 70
+  controlID: 122
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,7 +176,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 13
+  controlID: 83
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -426,20 +426,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/customLibs/emptyLibUnity/emptyLibUnity/Controllable/Vehicles/Planes/AC130
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/customLibs/emptyLibUnity/emptyLibUnity/Controllable/Vehicles/Planes/AC130
+  - Assets
   m_LastFoldersGridSize: 16
   m_LastProjectPath: /Users/rolando/Documents/Projects/odessaDefender2Unity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 65.000244}
-    m_SelectedIDs: fe2a0000
-    m_LastClickedID: 11006
-    m_ExpandedIDs: 000000005029000072290000d0290000de290000fc290000842a0000d42a0000122b00005a2c0000922c000000ca9a3b
+    m_SelectedIDs: 52290000
+    m_LastClickedID: 10578
+    m_ExpandedIDs: 000000005229000074290000d2290000e0290000fe290000862a0000d62a0000142b00005c2c0000942c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -467,7 +467,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005029000072290000d0290000de290000fc290000842a0000d42a0000122b00005a2c0000922c0000
+    m_ExpandedIDs: 000000005229000074290000d2290000e0290000fe290000862a0000d62a0000142b00005c2c0000942c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -494,7 +494,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300002436000008470000b8090000842a0000862a00008a2a00003c290000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

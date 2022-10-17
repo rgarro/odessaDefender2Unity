@@ -391,8 +391,8 @@ MonoBehaviour:
   minAltitude: 3.38
   maxAltitude: 15.35
   elevationSteps: 0.05
-  elevationCurveAngleX: 3.25
-  descendingCurveAngleX: -3.25
+  elevationCurveAngleX: 15.33
+  descendingCurveAngleX: -15.92
 --- !u!1 &359456306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3274875305005976306, guid: 0eb3064c7459f854a911616244dd1a90,
