@@ -393,6 +393,7 @@ MonoBehaviour:
   elevationSteps: 0.05
   elevationCurveAngleX: 15.33
   descendingCurveAngleX: -15.92
+  elevationStep: 0.25
 --- !u!1 &359456306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3274875305005976306, guid: 0eb3064c7459f854a911616244dd1a90,
@@ -728,6 +729,7 @@ MonoBehaviour:
   elevationSteps: 0.05
   elevationCurveAngleX: 3.25
   descendingCurveAngleX: -3.25
+  elevationStep: 0.2
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

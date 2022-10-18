@@ -1,8 +1,8 @@
-﻿using System.Runtime.CompilerServices;
+//using System.Diagnostics;
+using System.Runtime.CompilerServices;
 using System.Threading;
 using System;
 using System.Globalization;
-//using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -56,6 +56,7 @@ public class engineController : MonoBehaviour
     private bool isdElevated = false;
     public float elevationCurveAngleX = 3.25f;
     public float descendingCurveAngleX = -3.25f;
+    public float elevationStep = 0.2f;
 
     // Start is called before the first frame update
     void Start()
@@ -125,7 +126,6 @@ public class engineController : MonoBehaviour
     }
 
     void diveRight(){
-        //Debug.Log("diving right");
         this.AirPlane.transform.Translate(Vector3.left * Time.deltaTime* (this.yardsPerSecond/this.sideDiveAccelerationRate));
         if(!this.isDived){
             this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ);
@@ -134,18 +134,23 @@ public class engineController : MonoBehaviour
     }
     void increaseEleveation(){
         if(this.AirPlane.transform.position.y < this.maxAltitude && this.AirPlane.transform.position.y > this.minAltitude){
-            //this.AirPlane.transform.position.y = this.AirPlane.transform.position.y * this.elevationSteps*Time.deltaTime;
             this.AirPlane.transform.Translate(Vector3.up * (Time.deltaTime * this.yardsPerSecond));
             if(!this.isElevated){
-                this.AirPlane.transform.Rotate(this.elevationCurveAngleX,0,0);//step this elevation later
-                this.isElevated = true;
+                if(this.AirPlane.transform.rotation.x < this.elevationCurveAngleX){
+            Debug.Log("elevation step");
+                    float nextElevationAngle = this.AirPlane.transform.rotation.x + this.elevationStep;
+                    //this.AirPlane.transform.Rotate(this.elevationCurveAngleX,0,0);
+                    this.AirPlane.transform.Rotate(nextElevationAngle,0,0);
+                }else{
+             Debug.Log("NOSE UP");        
+                    this.isElevated = true;
+                }    
             }
         }
     }
 
     void decreaseElevation(){
         if(this.AirPlane.transform.position.y < this.maxAltitude && this.AirPlane.transform.position.y > this.minAltitude){
-            //this.AirPlane.transform.position.y = this.AirPlane.transform.position.y * this.elevationSteps*Time.deltaTime;
             this.AirPlane.transform.Translate(Vector3.down * (Time.deltaTime * this.yardsPerSecond));
             if(!this.isdElevated){
                 this.AirPlane.transform.Rotate(this.descendingCurveAngleX,0,0);//step this later
@@ -213,10 +218,10 @@ public class engineController : MonoBehaviour
          if (Input.GetKeyUp("up"))
         {
             //Debug.Log("up up");
-            if(this.isElevated){
-                this.AirPlane.transform.Rotate(this.elevationCurveAngleX*-1,0,0);
+            /*if(this.isElevated){
+                this.AirPlane.transform.Rotate(this.elevationCurveAngleX*-1,0,0);//step return tomorrow
                 this.isElevated = false;
-            }
+            }*/
         }
         if (Input.GetKeyUp("down"))
         {
