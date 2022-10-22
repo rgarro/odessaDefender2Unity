@@ -171,13 +171,11 @@ public class engineController : MonoBehaviour
     void joystickControls(){
         if (Input.GetKey("up"))
         {
-           // Debug.Log("up arrow: "+ this.helicopter.transform.eulerAngles.x);
             this.increaseEleveation();
         }
 
         if (Input.GetKey("down"))
         {
-            //Debug.Log("down arrow: " + this.helicopter.transform.eulerAngles.x);
             this.decreaseElevation();
         }
          if (Input.GetKey("left")){
@@ -193,13 +191,11 @@ public class engineController : MonoBehaviour
 
         /*if (Input.GetKeyUp("left") || Input.GetKeyUp("right"))
         {
-            Debug.Log("No Voy en Tren voy en avion ... ");
             this.stabilizePlane();
         }*/
 
         if (Input.GetKeyUp("left"))
         {
-            //Debug.Log("left up");
             if(this.isDived){
                 this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ);
                 this.isDived = false;
@@ -208,7 +204,6 @@ public class engineController : MonoBehaviour
 
         if (Input.GetKeyUp("right"))
         {
-            //Debug.Log("right  up"+this.isDived);
             if(this.isDived){
                 this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ*-1);
                 this.isDived = false;
@@ -217,7 +212,6 @@ public class engineController : MonoBehaviour
 
          if (Input.GetKeyUp("up"))
         {
-            //Debug.Log("up up");
             /*if(this.isElevated){
                 this.AirPlane.transform.Rotate(this.elevationCurveAngleX*-1,0,0);//step return tomorrow
                 this.isElevated = false;
