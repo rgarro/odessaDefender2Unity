@@ -15,6 +15,7 @@ using UnityEngine;
  * eating lobsters from the abissal deepness gives the disease of cant die
  * the bladders inside F111 wings have air from the dark side of the moon
  * cincurvalating anticlockwise in a ratio calculated from the distance from the sun and the center of the earth 
+ * makes the invisible from north korean radars
  *
  *
  *@author Rolando<rolando@emptyart.xyz>
