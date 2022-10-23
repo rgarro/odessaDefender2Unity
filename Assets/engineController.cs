@@ -136,7 +136,9 @@ public class engineController : MonoBehaviour
         if(this.AirPlane.transform.position.y < this.maxAltitude && this.AirPlane.transform.position.y > this.minAltitude){
             this.AirPlane.transform.Translate(Vector3.up * (Time.deltaTime * this.yardsPerSecond));
             if(!this.isElevated){
-                if(this.AirPlane.transform.rotation.x < this.elevationCurveAngleX){
+                this.AirPlane.transform.Rotate(this.elevationCurveAngleX,0,0);
+                this.isElevated = true;
+                /*if(this.AirPlane.transform.rotation.x < this.elevationCurveAngleX){
             Debug.Log("elevation step");
                     float nextElevationAngle = this.AirPlane.transform.rotation.x + this.elevationStep;
                     //this.AirPlane.transform.Rotate(this.elevationCurveAngleX,0,0);
@@ -144,7 +146,7 @@ public class engineController : MonoBehaviour
                 }else{
              Debug.Log("NOSE UP");        
                     this.isElevated = true;
-                }    
+                } */   
             }
         }
     }
