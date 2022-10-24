@@ -231,7 +231,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 655.38
+      value: 668.9
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -383,16 +383,16 @@ MonoBehaviour:
   yardsPerSecond: 3.13
   AirPlaneEngineSoundClip: {fileID: 8300000, guid: df779dca6b2914ada8df7eeaad8c2243,
     type: 3}
-  enginePowerSliderYpos: 121
-  enginePowerSliderXpos: 221
+  enginePowerSliderYpos: 122
+  enginePowerSliderXpos: 222
   engineThrottleLabel: Engine Power
-  diveCurveAngleZ: 3.95
-  sideDiveAccelerationRate: 1.52
-  minAltitude: 3.17
-  maxAltitude: 15.35
-  elevationSteps: 0.05
-  elevationCurveAngleX: 15.33
-  descendingCurveAngleX: -15.92
+  diveCurveAngleZ: 3.94
+  sideDiveAccelerationRate: 1.53
+  minAltitude: 3.18
+  maxAltitude: 15.34
+  elevationSteps: 0.06
+  elevationCurveAngleX: 15.32
+  descendingCurveAngleX: -15.93
   elevationStep: 0.25
 --- !u!1 &359456306 stripped
 GameObject:
@@ -428,7 +428,7 @@ MonoBehaviour:
   LeftIcon: {fileID: 2800000, guid: efa7b24e95ea64991bee2ba033f18fd1, type: 3}
   RightIcon: {fileID: 2800000, guid: 1a3e0eb20c30f4af7967015fc702112e, type: 3}
   btnSkin: {fileID: 0}
-  buttons_x_corner: 200
+  buttons_x_corner: 205
   cameraTransitionSoundClip: {fileID: 0}
 --- !u!82 &359456308
 AudioSource:
