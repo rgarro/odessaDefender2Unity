@@ -22,10 +22,15 @@ public class sideGunController : MonoBehaviour
 {
 
      public GameObject GunCamera;
+     public GameObject Ammunition;
 
     // Start is called before the first frame update
     void Start()
     {
+        
+    }
+
+    void shoot(){
         
     }
 

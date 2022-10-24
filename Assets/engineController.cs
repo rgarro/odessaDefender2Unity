@@ -93,7 +93,6 @@ public class engineController : MonoBehaviour
 	}
 
     void OnGUI(){
-         // Debug.Log("Helicopter X: "+ this.helicopter.transform.eulerAngles.x );
         GUI.Box(new Rect(this.enginePowerSliderXpos - 20,this.enginePowerSliderYpos - 15,275,30), this.engineThrottleLabel);
         this.yardsPerSecond = GUI.HorizontalSlider(new Rect(this.enginePowerSliderXpos, this.enginePowerSliderYpos, 250, 50), this.yardsPerSecond, 2.0F, 10.0F);
     }
