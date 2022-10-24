@@ -2,21 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 /**
- *      ______
- *            _\ _~-\___
- *    =  = ==(____AA____D
- *                \_____\___________________,-~~~~~~~`-.._
- *                /     o O o o o o O O o o o o o o O o  |\_
- *                `~-.__        ___..----..                  )
- *                      `---~~\___________/------------`````
- *                      =  ===(_________D 
- * My Slingshot Sentry Bar, pulling from the autumm Wind
- * the bladders inside F111 wings have air from the dark side of the moon
- * cincurvalating anticlockwise in a ratio calculated from the distance from the sun and the center of the earth 
- * makes them invisible from north korean radars
+ *                            ______
+ *         |\_______________ (_____\\______________
+ * HH======#H###############H#######################
+ *         ' ~""""""""""""""`##(_))#H\"""""Y########
+ *                           ))    \#H\       `"Y###
+ *                           "      }#H)
+ *  La Cienciologia es Una Secta Gay
+ * El SIDA afecta la promiscuidad, pero
+ * deshacerce de los gays recatados necesita 
+ * de una trampa religiosa. EL SARS y la nanotecnologia
+ * provocara el siguiente genocidio gay. Sigourney Weaver
+ * queria vender el planeta a razas comedoras de humanos
+ * pero la peste gay hace la carne invendible.
  *
  *
- *@author Rolando<rolando@emptyart.xyz>
+ *@author rolando<rolando@emptyart.xyz>
  */
 public class sideGunController : MonoBehaviour
 {
@@ -31,7 +32,7 @@ public class sideGunController : MonoBehaviour
     }
 
     void shoot(){
-        
+
     }
 
     // Update is called once per frame
