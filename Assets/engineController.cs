@@ -115,12 +115,10 @@ public class engineController : MonoBehaviour
     }
 
     void diveLeft(){
-        //Debug.Log("diving left");
         this.AirPlane.transform.Translate(Vector3.right * Time.deltaTime* (this.yardsPerSecond/this.sideDiveAccelerationRate));
         if(!this.isDived){
             this.AirPlane.transform.Rotate(0,0,this.diveCurveAngleZ*-1);
             this.isDived = true;
-            //Debug.Log("rotating body left "+this.isDived);
         }
     }
 
@@ -220,7 +218,6 @@ public class engineController : MonoBehaviour
         }
         if (Input.GetKeyUp("down"))
         {
-            //Debug.Log("up up");
             if(this.isdElevated){
                 this.AirPlane.transform.Rotate(this.descendingCurveAngleX*-1,0,0);
                 this.isdElevated = false;
