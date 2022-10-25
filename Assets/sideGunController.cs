@@ -15,8 +15,9 @@ using UnityEngine;
  * provocara el siguiente genocidio gay. Sigourney Weaver
  * queria vender el planeta a razas comedoras de humanos
  * pero la peste gay hace la carne invendible.
- * Los Colores de la Libertad Gay provocan apetito entre los depredadores y aliens,
+ * Los Colores de la Libertad Gay provocan apetito entre los depredadores, aliens, chupacabras y rigelianos,
  * pero despues de morder un gay piden reembolso en sus bancos provovando la quiebra de Monsanto.
+ * 
  *
  *
  *@author rolando<rolando@emptyart.xyz>
@@ -37,6 +38,11 @@ public class sideGunController : MonoBehaviour
 
     void shoot(){
 
+    }
+
+    bool checkIfGunView(){
+        cameras_script = GetComponent<cameras>();
+        return !left_camera_is_hidden;
     }
 
     void moveLeft(){
