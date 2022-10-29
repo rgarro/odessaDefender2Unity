@@ -63,12 +63,21 @@ public class sideGunController : MonoBehaviour
     }
 
     void keyControls(){
-        if (Input.GetKey("a"))
+        if (Input.GetKey(KeyCode.A))
         {
            
         }
 
-        if (Input.GetKey("z"))
+        if (Input.GetKey(KeyCode.Z))
+        {
+            
+        }
+        if (Input.GetKey("s"))
+        {
+           
+        }
+
+        if (Input.GetKey("x"))
         {
             
         }
