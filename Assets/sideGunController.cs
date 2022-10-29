@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿//using System.Diagnostics;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 /**
@@ -9,7 +10,7 @@ using UnityEngine;
  *                           ))    \#H\       `"Y###
  *                           "      }#H)
  * 
- * 
+ * Sun is Shinning the Weather is Sweet ...
  * 
  * 
  *
@@ -65,19 +66,19 @@ public class sideGunController : MonoBehaviour
     void keyControls(){
         if (Input.GetKey(KeyCode.A))
         {
-           
+           Debug.Log("hitting A");
         }
 
         if (Input.GetKey(KeyCode.Z))
         {
             
         }
-        if (Input.GetKey("s"))
+        if (Input.GetKey(KeyCode.S))
         {
            
         }
 
-        if (Input.GetKey("x"))
+        if (Input.GetKey(KeyCode.X))
         {
             
         }
