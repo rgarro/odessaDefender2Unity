@@ -221,7 +221,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.38
+      value: -5.51
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -387,7 +387,7 @@ MonoBehaviour:
   enginePowerSliderXpos: 222
   engineThrottleLabel: Engine Power
   diveCurveAngleZ: 3.94
-  sideDiveAccelerationRate: 1.53
+  sideDiveAccelerationRate: 1.54
   minAltitude: 3.18
   maxAltitude: 15.34
   elevationSteps: 0.06
