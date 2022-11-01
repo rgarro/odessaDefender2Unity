@@ -11,6 +11,7 @@ using UnityEngine;
  *                           "      }#H)
  * 
  * Sun is Shinning the Weather is Sweet ...
+ * My Slingshot Turbine is in the UPS truck
  * 
  * 
  *
@@ -71,16 +72,16 @@ public class sideGunController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Z))
         {
-            
+            Debug.Log("hitting Z");
         }
         if (Input.GetKey(KeyCode.S))
         {
-           
+           Debug.Log("hitting S");
         }
 
         if (Input.GetKey(KeyCode.X))
         {
-            
+            Debug.Log("hitting X");
         }
     }
 
