@@ -37,7 +37,7 @@ public class sideGunController : MonoBehaviour
     }
 
     bool checkIfGunView(){
-        //cameras_script = GetComponent<cameras>();
+        cameras_script = GetComponent<cameras>();
         //return !left_camera_is_hidden;
         return false;
     }

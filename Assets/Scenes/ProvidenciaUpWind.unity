@@ -221,7 +221,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.51
+      value: -6.11
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -231,7 +231,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 674.71
+      value: 675.66
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -388,8 +388,8 @@ MonoBehaviour:
   engineThrottleLabel: Engine Power
   diveCurveAngleZ: 3.94
   sideDiveAccelerationRate: 1.54
-  minAltitude: 3.18
-  maxAltitude: 15.34
+  minAltitude: 3.17
+  maxAltitude: 15.37
   elevationSteps: 0.06
   elevationCurveAngleX: 15.32
   descendingCurveAngleX: -15.93
