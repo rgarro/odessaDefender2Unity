@@ -6,7 +6,6 @@ using System.Globalization;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 /**
  * The Dharmakaya of my Slingshot Mixer Surfboard
  * :: AC130  Helimover ::

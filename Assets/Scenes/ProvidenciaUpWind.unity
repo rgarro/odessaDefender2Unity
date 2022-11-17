@@ -601,7 +601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 230f7f353c3234e2391ed2ac4b649c9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GunCamera: {fileID: 0}
+  GunCamera: {fileID: 1738255429}
   Ammunition: {fileID: 0}
   ammoTimeToLive: 3.5
   gunShotSoundClip: {fileID: 0}
