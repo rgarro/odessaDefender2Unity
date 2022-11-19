@@ -137,12 +137,10 @@ public class engineController : MonoBehaviour
                 this.AirPlane.transform.Rotate(this.elevationCurveAngleX,0,0);
                 this.isElevated = true;
                 /*if(this.AirPlane.transform.rotation.x < this.elevationCurveAngleX){
-            Debug.Log("elevation step");
                     float nextElevationAngle = this.AirPlane.transform.rotation.x + this.elevationStep;
                     //this.AirPlane.transform.Rotate(this.elevationCurveAngleX,0,0);
                     this.AirPlane.transform.Rotate(nextElevationAngle,0,0);
-                }else{
-             Debug.Log("NOSE UP");        
+                }else{      
                     this.isElevated = true;
                 } */   
             }
