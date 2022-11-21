@@ -221,7 +221,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.28
+      value: -7.87
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -604,7 +604,7 @@ MonoBehaviour:
   GunCamera: {fileID: 1738255429}
   Ammunition: {fileID: 0}
   ammoTimeToLive: 3.5
-  gunShotSoundClip: {fileID: 0}
+  gunShotSoundClip: {fileID: 8300000, guid: 11d867f80745640ec97f1e115fa07ab0, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
