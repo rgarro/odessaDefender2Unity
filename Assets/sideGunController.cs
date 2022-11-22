@@ -25,6 +25,7 @@ public class sideGunController : MonoBehaviour
      public GameObject Ammunition;
      public float ammoTimeToLive;
      public AudioClip gunShotSoundClip;
+     public float elevationSteps = 0.15f;
 
     // Start is called before the first frame update
     void Start()
@@ -49,15 +50,15 @@ public class sideGunController : MonoBehaviour
     }
 
     void moveRight(){
-        if(this.checkIfGunView()){
-
-        }
+        //if(this.checkIfGunView()){
+this.GunCamera.transform.Rotate(0,0,0);
+        //}
     }
 
     void gunElevation(){
-        if(this.checkIfGunView()){
-
-        }
+        //if(this.checkIfGunView()){
+this.GunCamera.transform.Rotate(0,0,0);
+        //}
     }
 
     void gunControls(){
