@@ -9,9 +9,8 @@ using UnityEngine;
  *         ' ~""""""""""""""`##(_))#H\"""""Y########
  *                           ))    \#H\       `"Y###
  *                           "      }#H)
+ * Mataron al Sicopata de Vuelta de Jorco ...
  * 
- * Sun is Shinning the Weather is Sweet ...
- * My Slingshot Turbine is in the UPS truck
  * 
  * 
  *
@@ -55,7 +54,7 @@ this.GunCamera.transform.Rotate(0,0,0);
         //}
     }
 
-    void gunElevation(){
+    void gunElevation(float degress){
         //if(this.checkIfGunView()){
 this.GunCamera.transform.Rotate(0,0,0);
         //}
@@ -66,14 +65,16 @@ this.GunCamera.transform.Rotate(0,0,0);
     }
 
     void keyControls(){
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.F))
         {
-           Debug.Log("hitting A");
+           Debug.Log("hitting F");
+           this.gunEleveation(0.2);
         }
 
-        if (Input.GetKey(KeyCode.Z))
+        if (Input.GetKey(KeyCode.G))
         {
-            Debug.Log("hitting Z");
+            Debug.Log("hitting G");
+            this.gunEleveation(-0.2);
         }
         if (Input.GetKey(KeyCode.S))
         {
