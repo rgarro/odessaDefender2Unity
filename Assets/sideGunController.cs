@@ -68,13 +68,13 @@ this.GunCamera.transform.Rotate(0,0,0);
         if (Input.GetKey(KeyCode.F))
         {
            Debug.Log("hitting F");
-           this.gunEleveation(0.2);
+           this.gunElevation(0.2f);
         }
 
         if (Input.GetKey(KeyCode.G))
         {
-            Debug.Log("hitting G");
-            this.gunEleveation(-0.2);
+            //Debug.Log("hitting G");
+            this.gunElevation(-0.2f);
         }
         if (Input.GetKey(KeyCode.S))
         {
