@@ -58,6 +58,8 @@ public class engineController : MonoBehaviour
     public float elevationCurveAngleX = 3.25f;
     public float descendingCurveAngleX = -3.25f;
     public float elevationStep = 0.2f;
+    public float elevationStep = 0.2f;
+
 
     // Start is called before the first frame update
     void Start()
@@ -164,6 +166,10 @@ public class engineController : MonoBehaviour
     void stabilizePlane(){
         this.AirPlane.transform.Rotate(0,0,0);
         this.isDived = false;
+    }
+
+    bool isZBoundaryPos(){
+
     }
 
     void joystickControls(){

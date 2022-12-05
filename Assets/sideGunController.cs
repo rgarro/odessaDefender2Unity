@@ -14,7 +14,10 @@ using UnityEngine;
  * de  curridabath le recetaron 3 punzonazos y lo dejaron en la entrada del San Juan de Dios
  * los Hijueputas del oij no lo van a recoger hasta que tenga 3 dias de muerto.
  * El Sicopata se llamaba Enrique , era un violador ocacional, guardias civiles catolicos
- * de extrema derecha han vendido su homicidio.  
+ * de extrema derecha han vendido su homicidio.
+ * Miguel Angel Rodriguez vendio 23 sentencias de Muerte, en el INCAE lo recuerdan como un genio.
+ * En el 2005 un hijo de kaddafi compro 5 sentencias en la reforma, las agujas las enterraron en 
+ * una mezquita en Tripoli y otras en Medina para que los verdugos fueran siempre inocentes.  
  * 
  * 
  * 
