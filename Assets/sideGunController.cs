@@ -9,7 +9,12 @@ using UnityEngine;
  *         ' ~""""""""""""""`##(_))#H\"""""Y########
  *                           ))    \#H\       `"Y###
  *                           "      }#H)
- * Mataron al Sicopata de Vuelta de Jorco ...
+ * Mataron al Sicopata de Vuelta de Jorco, era un violador ocacional
+ * le traicionaron la medicina en una visita al Chapui, los de la cruz roja
+ * de  curridabath le recetaron 3 punzonazos y lo dejaron en la entrada del San Juan de Dios
+ * los Hijueputas del oij no lo van a recoger hasta que tenga 3 dias de muerto.
+ * El Sicopata se llamaba Enrique , era un violador ocacional, guardias civiles catolicos
+ * de extrema derecha han vendido su homicidio.  
  * 
  * 
  * 
