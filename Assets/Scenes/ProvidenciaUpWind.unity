@@ -194,7 +194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 104931540}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -174.4, y: 0, z: -298}
+  m_LocalPosition: {x: -391, y: 0, z: 0}
   m_LocalScale: {x: -0.024793694, y: 0.94, z: 0.52392}
   m_Children: []
   m_Father: {fileID: 0}
@@ -221,7 +221,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.57
+      value: -103.4
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -231,7 +231,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 672.4
+      value: 901.7
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -394,6 +394,7 @@ MonoBehaviour:
   elevationCurveAngleX: 15.32
   descendingCurveAngleX: -15.93
   elevationStep: 0.25
+  maxZBoundaryPos: 0.2
 --- !u!1 &359456306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3274875305005976306, guid: 0eb3064c7459f854a911616244dd1a90,
@@ -747,6 +748,7 @@ MonoBehaviour:
   elevationCurveAngleX: 3.25
   descendingCurveAngleX: -3.25
   elevationStep: 0.2
+  maxZBoundaryPos: 0.2
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0

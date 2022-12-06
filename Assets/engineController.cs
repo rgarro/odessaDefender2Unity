@@ -58,7 +58,7 @@ public class engineController : MonoBehaviour
     public float elevationCurveAngleX = 3.25f;
     public float descendingCurveAngleX = -3.25f;
     public float elevationStep = 0.2f;
-    public float elevationStep = 0.2f;
+    public float maxZBoundaryPos = 0.2f;
 
 
     // Start is called before the first frame update
@@ -169,7 +169,7 @@ public class engineController : MonoBehaviour
     }
 
     bool isZBoundaryPos(){
-
+        return false;
     }
 
     void joystickControls(){
