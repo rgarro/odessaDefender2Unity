@@ -107,15 +107,6 @@ public class engineController : MonoBehaviour
         }
     }
 
-    void increaseEnginePower(){
-       /* if(this.AirPlane.transform.position.y < this.maxAltitude && this.AirPlane.transform.position.y > this.minAltitude){
-            this.AirPlane.transform.Translate(Vector3.down * (Time.deltaTime * this.yardsPerSecond));
-        }*/
-    }
-
-    void decreaseEnginePower(){
-        
-    }
 
     void diveLeft(){
         this.AirPlane.transform.Translate(Vector3.right * Time.deltaTime* (this.yardsPerSecond/this.sideDiveAccelerationRate));
