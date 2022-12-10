@@ -231,7 +231,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 902.11
+      value: 911
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -394,7 +394,7 @@ MonoBehaviour:
   elevationCurveAngleX: 15.32
   descendingCurveAngleX: -15.93
   elevationStep: 0.25
-  maxZBoundaryPos: 0.2
+  maxZBoundaryPos: 5.1
 --- !u!1 &359456306 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3274875305005976306, guid: 0eb3064c7459f854a911616244dd1a90,

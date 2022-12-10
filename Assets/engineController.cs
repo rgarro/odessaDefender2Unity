@@ -1,3 +1,4 @@
+using System.Diagnostics;
 //using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Threading;
@@ -58,7 +59,8 @@ public class engineController : MonoBehaviour
     public float elevationCurveAngleX = 3.25f;
     public float descendingCurveAngleX = -3.25f;
     public float elevationStep = 0.2f;
-    public float maxZBoundaryPos = 0.2f;
+    public float maxZBoundaryPos = 10.2f;
+    public float returnZpos = 900.1f;
 
 
     // Start is called before the first frame update
@@ -159,8 +161,10 @@ public class engineController : MonoBehaviour
         this.isDived = false;
     }
 
-    bool isZBoundaryPos(){
-        return false;
+    void reachZBoundaryBack(){
+        if(this.AirPlane.transform.position.z < this.maxZBoundaryPos){
+            this.AirPlane.transform.Translate(new Vector3(this.AirPlane.transform.position.x,this.AirPlane.transform.position.y,this.returnZpos));
+        }
     }
 
     void joystickControls(){
