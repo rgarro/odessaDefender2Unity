@@ -33,6 +33,7 @@ public class sideGunController : MonoBehaviour
      public float ammoTimeToLive;
      public AudioClip gunShotSoundClip;
      public float elevationSteps = 0.15f;
+     public float rotationStepLenght = 0.3f;
 
     // Start is called before the first frame update
     void Start()

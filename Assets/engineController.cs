@@ -81,6 +81,7 @@ public class engineController : MonoBehaviour
        this.rotateHelipad();
        this.moveForward();
        this.joystickControls();
+       this.reachZBoundaryBack();
     }
 
     private void rotateHelipad(){
