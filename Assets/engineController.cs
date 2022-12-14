@@ -212,10 +212,10 @@ public class engineController : MonoBehaviour
 
          if (Input.GetKeyUp("up"))
         {
-            /*if(this.isElevated){
+            if(this.isElevated){
                 this.AirPlane.transform.Rotate(this.elevationCurveAngleX*-1,0,0);//step return tomorrow
                 this.isElevated = false;
-            }*/
+            }
         }
         if (Input.GetKeyUp("down"))
         {
@@ -223,6 +223,7 @@ public class engineController : MonoBehaviour
                 this.AirPlane.transform.Rotate(this.descendingCurveAngleX*-1,0,0);
                 this.isdElevated = false;
             }
+    
         }
 
     }
