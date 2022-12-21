@@ -1,4 +1,4 @@
-using System.Reflection.PortableExecutable;
+//using System.Reflection.PortableExecutable;
 using System.Diagnostics;
 //using System.Diagnostics;
 using System.Runtime.CompilerServices;
@@ -170,8 +170,8 @@ public class engineController : MonoBehaviour
     }
 
     void doRestart(){
-        Debug.Log("I loc everyday With the P O U N D and and my nigga Dr. Dre");
-        );
+       // Debug.Log("I loc everyday With the P O U N D and and my nigga Dr. Dre");
+        
     }
 
     void joystickControls(){
