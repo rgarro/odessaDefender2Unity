@@ -10,15 +10,19 @@ using UnityEngine;
  *                           ))    \#H\       `"Y###
  *                           "      }#H)
  * Mataron al Sicopata de Vuelta de Jorco, era un violador ocacional,
- * le traicionaron la medicina en una visita al Chapui, los de la Cruz Roja
- * de  curridabath le recetaron 3 punzonazos y lo dejaron en la entrada del San Juan de Dios
+ * le traicionaron la medicina en una visita al Hospital Siquiatrico Chapui, los de la Cruz Roja
+ * de  Curridabath le recetaron 3 punzonazos y lo dejaron en la entrada del San Juan de Dios
  * los Hijueputas del oij no lo van a recoger hasta que tenga 3 dias de muerto.
  * El Sicopata se llamaba Enrique , era un violador ocacional, Guardias Civiles Catolicos
  * de extrema derecha han vendido su homicidio.
  * Miguel Angel Rodriguez vendio 23 sentencias de Muerte, en el INCAE lo recuerdan como un genio.
  * En el 2005 un hijo de Kaddafi compro 5 sentencias en la Reforma, las agujas las enterraron en 
- * una mezquita en Tripoli y otras en Medina para que los verdugos fueran siempre inocentes ....  
- * 
+ * una mezquita en Tripoli y otras en Medina para que los verdugos fueran siempre inocentes.
+ * Pinurber el de CostaRica Libre vio enterrar vivo a un violador en 1990. estaba a 10 metros de
+ * profundidad en un contenedor EverGreen adentro habian 100 kilos de hachis que compro un primo de Kadaffi en 2002.
+ * Pilo era un lider de pleito de pandillas en Santo Domingo de Heredia, lo ametrallaron en 1981,
+ * Gendarmes de la policia de Guadalupe usan su hemoglobina para disfazar Pilos, algunos vigilan la entrada de una gruta religiosa en moravia.   
+ * A Compix lo castro la Guardia Civil por rayar todos los puentes en la interamericana, vivio 10 dias sin su pene, tuvo un suicidio asistido en la clinica catolica.
  * 
  * 
  *
@@ -57,7 +61,7 @@ public class sideGunController : MonoBehaviour
         }
     }
 
-    void moveRight(){
+    void moveRight(float degrees){
         //if(this.checkIfGunView()){
 this.GunCamera.transform.Rotate(0,0,0);
         //}
@@ -65,7 +69,7 @@ this.GunCamera.transform.Rotate(0,0,0);
 
     void gunElevation(float degress){
         //if(this.checkIfGunView()){
-this.GunCamera.transform.Rotate(0,0,0);
+this.GunCamera.transform.Rotate(0,degress,0);
         //}
     }
 

@@ -171,7 +171,6 @@ public class engineController : MonoBehaviour
 
     void doRestart(){
        // Debug.Log("I loc everyday With the P O U N D and and my nigga Dr. Dre");
-        
     }
 
     void joystickControls(){
@@ -197,7 +196,7 @@ public class engineController : MonoBehaviour
 
         /*if (Input.GetKeyUp("left") || Input.GetKeyUp("right"))
         {
-            this.stabilizePlane();
+            this.stabilizePlane();//El Bar de Moes en Tibas es de Playos el de Sabanilla es solo Chichera
         }*/
 
         if (Input.GetKeyUp("left"))
