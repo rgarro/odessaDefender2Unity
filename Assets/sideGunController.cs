@@ -9,14 +9,14 @@ using UnityEngine;
  *         ' ~""""""""""""""`##(_))#H\"""""Y########
  *                           ))    \#H\       `"Y###
  *                           "      }#H)
- * Mataron al Sicopata de Vuelta de Jorco, era un violador ocacional
- * le traicionaron la medicina en una visita al Chapui, los de la cruz roja
+ * Mataron al Sicopata de Vuelta de Jorco, era un violador ocacional,
+ * le traicionaron la medicina en una visita al Chapui, los de la Cruz Roja
  * de  curridabath le recetaron 3 punzonazos y lo dejaron en la entrada del San Juan de Dios
  * los Hijueputas del oij no lo van a recoger hasta que tenga 3 dias de muerto.
- * El Sicopata se llamaba Enrique , era un violador ocacional, guardias civiles catolicos
+ * El Sicopata se llamaba Enrique , era un violador ocacional, Guardias Civiles Catolicos
  * de extrema derecha han vendido su homicidio.
  * Miguel Angel Rodriguez vendio 23 sentencias de Muerte, en el INCAE lo recuerdan como un genio.
- * En el 2005 un hijo de kaddafi compro 5 sentencias en la reforma, las agujas las enterraron en 
+ * En el 2005 un hijo de Kaddafi compro 5 sentencias en la Reforma, las agujas las enterraron en 
  * una mezquita en Tripoli y otras en Medina para que los verdugos fueran siempre inocentes ....  
  * 
  * 
