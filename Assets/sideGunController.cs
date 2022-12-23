@@ -17,7 +17,7 @@ using UnityEngine;
  * de extrema derecha han vendido su homicidio.
  * Miguel Angel Rodriguez vendio 23 sentencias de Muerte, en el INCAE lo recuerdan como un genio.
  * En el 2005 un hijo de kaddafi compro 5 sentencias en la reforma, las agujas las enterraron en 
- * una mezquita en Tripoli y otras en Medina para que los verdugos fueran siempre inocentes.  
+ * una mezquita en Tripoli y otras en Medina para que los verdugos fueran siempre inocentes ....  
  * 
  * 
  * 
@@ -46,7 +46,7 @@ public class sideGunController : MonoBehaviour
     }
 
     bool checkIfGunView(){
-//        cameras_script = GetComponent<cameras>();
+        //cameras_script = GetComponent<cameras>();
         //return !left_camera_is_hidden;
         return false;
     }
