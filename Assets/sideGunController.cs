@@ -35,6 +35,7 @@ public class sideGunController : MonoBehaviour
      public GameObject GunCamera;
      public GameObject Ammunition;
      public float ammoTimeToLive;
+     private AudioSource soundPlayer;
      public AudioClip gunShotSoundClip;
      public float elevationSteps = 0.15f;
      public float rotationStepLenght = 0.3f;
@@ -42,7 +43,18 @@ public class sideGunController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+          //Engine Sound
+        this.soundPlayer = GetComponent<AudioSource> ();
+           this.soundPlayer.volume = 0.2F;
+    }
+
+    void playGunShot(){
+        /*
+        this.soundPlayer.clip = this.AirPlaneEngineSoundClip;
+        if (!this.soundPlayer.isPlaying) {
+            this.soundPlayer.Play ();
+        }
+        */
     }
 
     void shoot(){
