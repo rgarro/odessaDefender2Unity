@@ -49,12 +49,10 @@ public class sideGunController : MonoBehaviour
     }
 
     void playGunShot(){
-        /*
-        this.soundPlayer.clip = this.AirPlaneEngineSoundClip;
+        this.soundPlayer.clip = this.gunShotSoundClip;
         if (!this.soundPlayer.isPlaying) {
             this.soundPlayer.Play ();
         }
-        */
     }
 
     void shoot(){
