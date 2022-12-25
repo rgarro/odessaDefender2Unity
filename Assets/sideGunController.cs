@@ -39,6 +39,10 @@ public class sideGunController : MonoBehaviour
      public AudioClip gunShotSoundClip;
      public float elevationSteps = 0.15f;
      public float rotationStepLenght = 0.3f;
+     private AudioSource servoSoundPlayer;
+     public AudioClip servoSoundClip;
+	private bool gUP;
+	private bool gDown;
 
     // Start is called before the first frame update
     void Start()

@@ -221,7 +221,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 230.95
+      value: 231.57
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -610,6 +610,7 @@ MonoBehaviour:
   gunShotSoundClip: {fileID: 8300000, guid: 11d867f80745640ec97f1e115fa07ab0, type: 3}
   elevationSteps: 0.15
   rotationStepLenght: 0.3
+  servoSoundClip: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
