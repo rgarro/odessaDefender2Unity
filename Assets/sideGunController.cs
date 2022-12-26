@@ -1,4 +1,5 @@
-﻿//using System.Diagnostics;
+﻿using System.Globalization;
+//using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -81,9 +82,10 @@ this.GunCamera.transform.Rotate(0,0,0);
         //}
     }
 
-    void gunElevation(float degress){
+    void gunElevation(float degrees){
         //if(this.checkIfGunView()){
-this.GunCamera.transform.Rotate(0,degress,0);
+            float elevY = this.GunCamera.transform.localEulerAngles.y + degrees;
+            this.GunCamera.transform.Rotate(0,elevY,0);
         //}
     }
 
@@ -95,13 +97,13 @@ this.GunCamera.transform.Rotate(0,degress,0);
         if (Input.GetKey(KeyCode.F))
         {
            Debug.Log("hitting F");
-           this.gunElevation(0.2f);
+           this.gunElevation(0.25f);
         }
 
         if (Input.GetKey(KeyCode.G))
         {
             //Debug.Log("hitting G");
-            this.gunElevation(-0.2f);
+            this.gunElevation(-0.25f);
         }
         if (Input.GetKey(KeyCode.S))
         {
