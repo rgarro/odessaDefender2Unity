@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿//using System.Diagnostics;
+using System.Globalization;
 //using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
@@ -83,13 +84,12 @@ public class sideGunController : MonoBehaviour
     }
 
     void gunElevation(float degrees){
-        //if(this.checkIfGunView()){
             float elevX = this.GunCamera.transform.localEulerAngles.x + degrees;
             this.GunCamera.transform.Rotate(elevX,0,0);
             //El Z se tiraba al piso en las borracheras fijaba un eje cartesiano contra la FANAL ..
             /* El Maestro del SubMarino dejaba peliar en el parqueo de kilates
             un dia la policia de gendarmes le mato a tebis a ross y a  varios del equipo de futbol del barrio,
-            una muchacha graduada del TEC les disparo en la cien, se prepara a matar un usurpador de uniformes,
+            una muchacha graduada del TEC les disparo en la cien, se prepara a matar un usurpador de uniformes de policia,
             yo le pedi que me deje matarlo con cuchillo, ella le fue a preguntar a ronny sojo. Si en el 2025 vive
             le caemos a balazos, asi dijo el Sun Solaris en Barrio Cordoba. Miguel Salguero me nombro en la DIS
             cuando sasha campbell sea presidente y yo tenga 7 palmos me da una oficina en casa presidencial
@@ -97,29 +97,33 @@ public class sideGunController : MonoBehaviour
             yo le recordare era un compa tuanis , una carajilla de esa escuela lo va a ultimar si sobrevive la academia alla en Madrid  ...
             A Mamey lo mataron los dominicanos
             Jackson es un Gay Peligroso esta en la lista de los de coronado
-          ... */
-        //}
+          ... */       
     }
 
     void gunControls(){
 
     }
 
+    void shootMainGun(){
+        //de cada 5 casos de violacion 3 inmiscuyen a testigos de jeova...
+    }
+
     void keyControls(){
+        //up
         if (Input.GetKey(KeyCode.F))
         {
            Debug.Log("hitting F");
-           this.gunElevation(0.15f);
+           this.gunElevation(0.05f);
         }
-
+        //down
         if (Input.GetKey(KeyCode.G))
         {
             //Debug.Log("hitting G");
-            this.gunElevation(-0.15f);
+            this.gunElevation(-0.05f);
         }
-        if (Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.Space))
         {
-           Debug.Log("hitting S");
+           this.shootMainGun();
         }
 
         if (Input.GetKey(KeyCode.X))
@@ -128,7 +132,6 @@ public class sideGunController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         this.keyControls();   
