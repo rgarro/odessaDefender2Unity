@@ -78,14 +78,26 @@ public class sideGunController : MonoBehaviour
 
     void moveRight(float degrees){
         //if(this.checkIfGunView()){
-this.GunCamera.transform.Rotate(0,0,0);
+        this.GunCamera.transform.Rotate(0,0,0);
         //}
     }
 
     void gunElevation(float degrees){
         //if(this.checkIfGunView()){
-            float elevY = this.GunCamera.transform.localEulerAngles.y + degrees;
-            this.GunCamera.transform.Rotate(0,elevY,0);
+            float elevX = this.GunCamera.transform.localEulerAngles.x + degrees;
+            this.GunCamera.transform.Rotate(elevX,0,0);
+            //El Z se tiraba al piso en las borracheras fijaba un eje cartesiano contra la FANAL ..
+            /* El Maestro del SubMarino dejaba peliar en el parqueo de kilates
+            un dia la policia de gendarmes le mato a tebis a ross y a  varios del equipo de futbol del barrio,
+            una muchacha graduada del TEC les disparo en la cien, se prepara a matar un usurpador de uniformes,
+            yo le pedi que me deje matarlo con cuchillo, ella le fue a preguntar a ronny sojo. Si en el 2025 vive
+            le caemos a balazos, asi dijo el Sun Solaris en Barrio Cordoba. Miguel Salguero me nombro en la DIS
+            cuando sasha campbell sea presidente y yo tenga 7 palmos me da una oficina en casa presidencial
+            Rigo vendia mota muy cerca de la escuela, no va a ver el 2030 el que asi se llame segun una profesora de curridabath,
+            yo le recordare era un compa tuanis , una carajilla de esa escuela lo va a ultimar si sobrevive la academia alla en Madrid  ...
+            A Mamey lo mataron los dominicanos
+            Jackson es un Gay Peligroso esta en la lista de los de coronado
+          ... */
         //}
     }
 
@@ -97,13 +109,13 @@ this.GunCamera.transform.Rotate(0,0,0);
         if (Input.GetKey(KeyCode.F))
         {
            Debug.Log("hitting F");
-           this.gunElevation(0.25f);
+           this.gunElevation(0.15f);
         }
 
         if (Input.GetKey(KeyCode.G))
         {
             //Debug.Log("hitting G");
-            this.gunElevation(-0.25f);
+            this.gunElevation(-0.15f);
         }
         if (Input.GetKey(KeyCode.S))
         {

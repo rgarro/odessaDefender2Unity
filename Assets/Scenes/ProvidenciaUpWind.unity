@@ -218,10 +218,45 @@ PrefabInstance:
       propertyPath: m_Name
       value: MarulandaPeliroja
       objectReference: {fileID: 0}
+    - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.9310995
+      objectReference: {fileID: 0}
+    - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.3475836
+      objectReference: {fileID: 0}
+    - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.07034522
+      objectReference: {fileID: 0}
+    - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.08538821
+      objectReference: {fileID: 0}
+    - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 192
+      objectReference: {fileID: 0}
+    - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -4.2
+      objectReference: {fileID: 0}
+    - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 319.5
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 230.4
+      value: 230.523
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
