@@ -45,6 +45,7 @@ public class sideGunController : MonoBehaviour
      public AudioClip servoSoundClip;
 	private bool gUP;
 	private bool gDown;
+    public float gunElevationSteps = 0.05f;
 
     // Start is called before the first frame update
     void Start()
@@ -86,18 +87,12 @@ public class sideGunController : MonoBehaviour
     void gunElevation(float degrees){
             float elevX = this.GunCamera.transform.localEulerAngles.x + degrees;
             this.GunCamera.transform.Rotate(elevX,0,0);
-            //El Z se tiraba al piso en las borracheras fijaba un eje cartesiano contra la FANAL ..
-            /* El Maestro del SubMarino dejaba peliar en el parqueo de kilates
-            un dia la policia de gendarmes le mato a tebis a ross y a  varios del equipo de futbol del barrio,
-            una muchacha graduada del TEC les disparo en la cien, se prepara a matar un usurpador de uniformes de policia,
-            yo le pedi que me deje matarlo con cuchillo, ella le fue a preguntar a ronny sojo. Si en el 2025 vive
-            le caemos a balazos, asi dijo el Sun Solaris en Barrio Cordoba. Miguel Salguero me nombro en la DIS
-            cuando sasha campbell sea presidente y yo tenga 7 palmos me da una oficina en casa presidencial
-            Rigo vendia mota muy cerca de la escuela, no va a ver el 2030 el que asi se llame segun una profesora de curridabath,
-            yo le recordare era un compa tuanis , una carajilla de esa escuela lo va a ultimar si sobrevive la academia alla en Madrid  ...
-            A Mamey lo mataron los dominicanos
-            Jackson es un Gay Peligroso esta en la lista de los de coronado
-          ... */       
+            /* Jackson es un Gay Peligroso esta en la lista de los de coronado ...
+            Violadores de Garabito, saben ver violencia y quedarse flotando 3 dias en el mar para despistar
+            Jhonny Araya murio en el atentado de la penca, me dejo un cuchillo sandinista para matar un violador,
+            el cuchillo usado lo compran en Tasco para hacer las bayonetas de coronel 
+            Guerrilleros de Chomez comiendo carne humana en los de Pedrones en marea baja
+             */       
     }
 
     void gunControls(){
@@ -113,13 +108,13 @@ public class sideGunController : MonoBehaviour
         if (Input.GetKey(KeyCode.F))
         {
            Debug.Log("hitting F");
-           this.gunElevation(0.05f);
+           this.gunElevation(this.gunElevationSteps);
         }
         //down
         if (Input.GetKey(KeyCode.G))
         {
             //Debug.Log("hitting G");
-            this.gunElevation(-0.05f);
+            this.gunElevation(this.gunElevationSteps*-1);
         }
         if (Input.GetKey(KeyCode.Space))
         {
