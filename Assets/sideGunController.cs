@@ -79,20 +79,13 @@ public class sideGunController : MonoBehaviour
     }
 
     void moveRight(float degrees){
-        //if(this.checkIfGunView()){
         this.GunCamera.transform.Rotate(0,0,0);
-        //}
     }
 
     void gunElevation(float degrees){
             float elevX = this.GunCamera.transform.localEulerAngles.x + degrees;
             this.GunCamera.transform.Rotate(elevX,0,0);
-            /* Jackson es un Gay Peligroso esta en la lista de los de coronado ...
-            Violadores de Garabito, saben ver violencia y quedarse flotando 3 dias en el mar para despistar
-            Jhonny Araya murio en el atentado de la penca, me dejo un cuchillo sandinista para matar un violador,
-            el cuchillo usado lo compran en Tasco para hacer las bayonetas de coronel 
-            Guerrilleros de Chomez comiendo carne humana en los de Pedrones en marea baja
-             */       
+            /* Jackson es un Gay Peligroso esta en la lista de los de coronado ... */       
     }
 
     void gunControls(){
@@ -113,7 +106,6 @@ public class sideGunController : MonoBehaviour
         //down
         if (Input.GetKey(KeyCode.G))
         {
-            //Debug.Log("hitting G");
             this.gunElevation(this.gunElevationSteps*-1);
         }
         if (Input.GetKey(KeyCode.Space))
