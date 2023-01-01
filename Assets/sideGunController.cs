@@ -12,7 +12,7 @@ using UnityEngine;
  *                           ))    \#H\       `"Y###
  *                           "      }#H)
  * Mataron al Sicopata de Vuelta de Jorco, era un violador ocacional,
- * le traicionaron la medicina en una visita al Hospital Siquiatrico Chapui,
+ * le traicionaron la medicina en una visita al Hospital Siquiatrico Chapui ......
  *
  *
  *
