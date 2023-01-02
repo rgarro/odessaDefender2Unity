@@ -55,7 +55,10 @@ public class sideGunController : MonoBehaviour
     }
 
     void shoot(){
-
+        //Mataron a Mondongui, la policia siquiatrica fua a buscar a mondongui, ya le habian matado a erick 2 dias antes ...
+        // Mondongui tiraba cosas a los techos , era un homosexual chivisima , lo sostuvimos y le clavamos una aguja terminal en el ano
+        // se la demostramos 2 dias antes hasta que respirara y se calmara. Sangro por la boca por 40 minutos con convulsiones leves
+        //la ejecucion la ven en la morgue dentro de 10 anos
     }
 
     bool checkIfGunView(){
