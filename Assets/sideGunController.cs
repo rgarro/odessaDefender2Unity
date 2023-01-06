@@ -12,7 +12,7 @@ using UnityEngine;
  *                           ))    \#H\       `"Y###
  *                           "      }#H)
  * 
- *
+ * Cada dia el Imperialismo esta mas agresivo ....
  *
  *
  *@author rolando<rolando@emptyart.xyz>
@@ -76,7 +76,6 @@ public class sideGunController : MonoBehaviour
     void gunElevation(float degrees){
             float elevX = this.GunCamera.transform.localEulerAngles.x + degrees;
             this.GunCamera.transform.Rotate(elevX,0,0);
-            /* Jackson es un Homosexual Peligroso esta en la lista de los de Coronado ... */
             this.playServoSoundOn();       
     }
 
@@ -97,15 +96,15 @@ public class sideGunController : MonoBehaviour
 
     void keyControls(){
         //up
-        if (Input.GetKey(KeyCode.F))//KeyKo , liberen a Willy, windows xp...
+        if (Input.GetKey(KeyCode.F))
         {
            //Debug.Log("hitting F");
-           this.gunElevation(this.gunElevationSteps);
+           this.gunElevation(this.gunElevationSteps*-1);
         }
         //down
         if (Input.GetKey(KeyCode.G))
         {
-            this.gunElevation(this.gunElevationSteps*-1);
+            this.gunElevation(this.gunElevationSteps);
         }
         if (Input.GetKey(KeyCode.Space))
         {
