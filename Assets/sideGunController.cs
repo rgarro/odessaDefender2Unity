@@ -1,6 +1,5 @@
 ﻿//using System.Diagnostics;
 using System.Globalization;
-//using System.Diagnostics;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,24 +19,24 @@ using UnityEngine;
 public class sideGunController : MonoBehaviour
 {
 
-     public GameObject GunCamera;
-     public GameObject Ammunition;
-     public float ammoTimeToLive;
-     private AudioSource soundPlayer;
-     public AudioClip gunShotSoundClip;
-     public float elevationSteps = 0.15f;
-     public float rotationStepLenght = 0.3f;
-     private AudioSource servoSoundPlayer;
-     public AudioClip servoSoundClip;
-	private bool gUP;
+    public GameObject GunCamera;
+    public GameObject Ammunition;
+    public float ammoTimeToLive;
+    private AudioSource soundPlayer;
+    public AudioClip gunShotSoundClip;
+    public float elevationSteps = 0.15f;
+    public float rotationStepLenght = 0.3f;
+    private AudioSource servoSoundPlayer;
+    public AudioClip servoSoundClip;
+    private bool gUP;
 	private bool gDown;
     public float gunElevationSteps = 0.05f;
 
     void Start()
     {
         this.soundPlayer = GetComponent<AudioSource> ();
-           this.soundPlayer.volume = 0.2F;
-           this.servoSoundPlayer = GetComponent<AudioSource>();
+        this.soundPlayer.volume = 0.2F;
+        this.servoSoundPlayer = GetComponent<AudioSource>();
 		this.gUP = false;
 		this.gDown = false;
     }
@@ -98,7 +97,6 @@ public class sideGunController : MonoBehaviour
         //up
         if (Input.GetKey(KeyCode.F))
         {
-           //Debug.Log("hitting F");
            this.gunElevation(this.gunElevationSteps*-1);
         }
         //down
