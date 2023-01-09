@@ -221,27 +221,27 @@ PrefabInstance:
     - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.25525633
+      value: 0.18864061
       objectReference: {fileID: 0}
     - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.0057517583
+      value: -0.02322329
       objectReference: {fileID: 0}
     - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.3470687
+      value: 0.35918307
       objectReference: {fileID: 0}
     - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.9024159
+      value: -0.9137083
       objectReference: {fileID: 0}
     - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 207.69
+      value: 199.15
       objectReference: {fileID: 0}
     - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -286,7 +286,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 229.998
+      value: 229.476
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -668,7 +668,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 230f7f353c3234e2391ed2ac4b649c9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GunCamera: {fileID: 1738255429}
+  GunCamera: {fileID: 359456311}
   Ammunition: {fileID: 4948453994147161553, guid: 60bc3931d3171435baee009dff3e81f6,
     type: 3}
   ammoTimeToLive: 3.5
@@ -676,7 +676,7 @@ MonoBehaviour:
   elevationSteps: 0.1
   rotationStepLenght: 0.2
   servoSoundClip: {fileID: 8300000, guid: b9ea8fe6c052e4b1882b74c56b0b7de9, type: 3}
-  gunElevationSteps: 0.01
+  gunElevationSteps: 0.1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

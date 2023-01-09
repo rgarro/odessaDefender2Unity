@@ -1,8 +1,12 @@
-﻿//using System.Diagnostics;
+﻿//using System.Reflection.PortableExecutable;
+using System.Diagnostics;
+//using System.Diagnostics;
 using System.Globalization;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+ using Debug = UnityEngine.Debug;
+
 /**
  *                            ______
  *         |\_______________ (_____\\______________
@@ -73,7 +77,9 @@ public class sideGunController : MonoBehaviour
     }
 
     void gunElevation(float degrees){
+        Debug.Log("degrees: "+ degrees);
             float elevX = this.GunCamera.transform.localEulerAngles.x + degrees;
+            Debug.Log("elevation X: " + elevX);
             this.GunCamera.transform.Rotate(elevX,0,0);
             this.playServoSoundOn();       
     }
