@@ -221,27 +221,27 @@ PrefabInstance:
     - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.18864061
+      value: 0.15824404
       objectReference: {fileID: 0}
     - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.02322329
+      value: -0.036253273
       objectReference: {fileID: 0}
     - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.35918307
+      value: 0.363996
       objectReference: {fileID: 0}
     - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.9137083
+      value: -0.9171431
       objectReference: {fileID: 0}
     - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 199.15
+      value: 195.3
       objectReference: {fileID: 0}
     - target: {fileID: -1693844207606597032, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -286,7 +286,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 229.476
+      value: 229.35
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -673,10 +673,10 @@ MonoBehaviour:
     type: 3}
   ammoTimeToLive: 3.5
   gunShotSoundClip: {fileID: 8300000, guid: 11d867f80745640ec97f1e115fa07ab0, type: 3}
-  elevationSteps: 0.1
-  rotationStepLenght: 0.2
+  elevationSteps: 1
+  rotationStepLenght: 1
   servoSoundClip: {fileID: 8300000, guid: b9ea8fe6c052e4b1882b74c56b0b7de9, type: 3}
-  gunElevationSteps: 0.1
+  gunElevationSteps: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

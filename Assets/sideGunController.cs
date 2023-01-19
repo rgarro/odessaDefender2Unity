@@ -78,7 +78,8 @@ public class sideGunController : MonoBehaviour
 
     void gunElevation(float degrees){
         Debug.Log("degrees: "+ degrees);
-            float elevX = this.GunCamera.transform.localEulerAngles.x + degrees;
+            //float elevX = this.GunCamera.transform.localEulerAngles.x + degrees;
+            float elevX = this.GunCamera.transform.rotation.x + degrees;
             Debug.Log("elevation X: " + elevX);
             this.GunCamera.transform.Rotate(elevX,0,0);
             this.playServoSoundOn();       
