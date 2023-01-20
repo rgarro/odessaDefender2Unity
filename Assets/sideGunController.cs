@@ -15,7 +15,11 @@ using UnityEngine;
  *                           ))    \#H\       `"Y###
  *                           "      }#H)
  * 
- * Cada dia el Imperialismo esta mas agresivo ....
+ * Col Kaddafi is hidding out in Macondo a Bayou in the Mobile Area
+ * the sun is shinning in Sirte the weather is sweet
+ * Col Kaddafi rode a mig21 and had one of the original swords of the Mahoma cousins
+ * he used his sword to point at his enemies and yell them 'you fucking jotos !!!' 
+ * 
  *
  *
  *@author rolando<rolando@emptyart.xyz>
