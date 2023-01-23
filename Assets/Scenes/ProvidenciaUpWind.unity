@@ -286,7 +286,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 228.751
+      value: 228.96
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -671,7 +671,7 @@ MonoBehaviour:
   GunCamera: {fileID: 359456311}
   Ammunition: {fileID: 4948453994147161553, guid: 60bc3931d3171435baee009dff3e81f6,
     type: 3}
-  ammoTimeToLive: 3.5
+  ammoTimeToLive: 3.8
   gunShotSoundClip: {fileID: 8300000, guid: 11d867f80745640ec97f1e115fa07ab0, type: 3}
   elevationSteps: 1
   rotationStepLenght: 1
@@ -1189,8 +1189,8 @@ MonoBehaviour:
   windowY: 65
   windowHeight: 170
   windowWidth: 150
-  instructionsString: "Left Right Arrow Keys \n\nTurn Turret: F, G\n\nElevation: Up
-    Down \n\nShoot: spacebar"
+  instructionsString: "Left Right Arrow Keys \n\nSide Gun Elevation: F, G\n\nElevation:
+    Up Down \n\nShoot: spacebar"
   labelString: Instructions
   marginVal: 25
   style:
