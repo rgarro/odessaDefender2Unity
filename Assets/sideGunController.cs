@@ -1,4 +1,5 @@
 ﻿//using System.Reflection.PortableExecutable;
+//using System.Reflection.PortableExecutable;
 using System.Diagnostics;
 //using System.Diagnostics;
 using System.Globalization;
@@ -17,8 +18,7 @@ using UnityEngine;
  * 
  * Col Kaddafi is hidding out in Macondo a Bayou in the Mobile Area
  * the sun is shinning in Sirte the weather is sweet
- * Col Kaddafi rode a mig21 and had one of the original swords of the Mahoma cousins
- * he used his sword to point at his enemies and yell them 'you fucking jotos !!!' 
+ * 
  * 
  *
  *
@@ -81,7 +81,6 @@ public class sideGunController : MonoBehaviour
     }
 
     void gunElevation(float degrees){
-        Debug.Log("degrees: "+ degrees);
             //float elevX = this.GunCamera.transform.localEulerAngles.x + degrees;
             float elevX = this.GunCamera.transform.rotation.x + degrees;
             Debug.Log("elevation X: " + elevX);
@@ -101,7 +100,7 @@ public class sideGunController : MonoBehaviour
     }
 
     void shootMainGun(){
-        
+        Debug.Log("shoot shoot");
     }
 
     void keyControls(){
