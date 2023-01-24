@@ -60,9 +60,6 @@ public class sideGunController : MonoBehaviour
         }
     }
 
-    void shoot(){
-        
-    }
 
     bool checkIfGunView(){
         //cameras_script = GetComponent<cameras>();
@@ -83,7 +80,7 @@ public class sideGunController : MonoBehaviour
     void gunElevation(float degrees){
             //float elevX = this.GunCamera.transform.localEulerAngles.x + degrees;
             float elevX = this.GunCamera.transform.rotation.x + degrees;
-            Debug.Log("elevation X: " + elevX);
+           // Debug.Log("elevation X: " + elevX);
             this.GunCamera.transform.Rotate(elevX,0,0);
             this.playServoSoundOn();       
     }
@@ -101,19 +98,18 @@ public class sideGunController : MonoBehaviour
 
     void shootMainGun(){
         Debug.Log("shoot shoot");
-        /**
-        this.soundPlayer.clip = this.gunShotClip;
-			if (!this.soundPlayer.isPlaying) {
-				this.soundPlayer.Play ();
-			}
-			//float rotX = this.transform.localEulerAngles.x + this.correctionAngle;
+        this.playGunShot();
+			//float rotX = this.GunCamera.transform.localEulerAngles.x + this.correctionAngle;
 			//Quaternion rotation = Quaternion.Euler(rotX,this.turretObj.transform.eulerAngles.y,this.transform.localEulerAngles.z);
-			float rotationX = this.transform.localEulerAngles.x;// + this.correctionAngle;
+			float rotationX = this.GunCamera.transform.localEulerAngles.x;// + this.correctionAngle;
 			//float elevationY = this.transform.localEulerAngles.y;
-			float elevationY = (this.transform.rotation.y-90);//this.correctionAngle;
-Debug.Log("elevY9: "+elevationY);			
-			float horizontalRotationZ = (this.turretObj.transform.localEulerAngles.z-180);
-Debug.Log("horizZ: " + horizontalRotationZ);			 
+			//float elevationY = (this.transform.rotation.y-90);//this.correctionAngle;
+            float elevationY = (this.GunCamera.transform.rotation.y);
+Debug.Log("elevY: "+elevationY);			
+			//float horizontalRotationZ = (this.turretObj.transform.localEulerAngles.z-180);
+            float horizontalRotationZ = (this.GunCamera.transform.localEulerAngles.z);
+Debug.Log("horizZ: " + horizontalRotationZ);	
+/**		 
 			Quaternion rotation = Quaternion.Euler(rotationX,elevationY,horizontalRotationZ);
 			Vector3 position = new Vector3(this.turretObj.transform.position.x,this.turretObj.transform.position.y,this.turretObj.transform.position.z);
 			GameObject go = (GameObject)Instantiate (this.bulletObj,position,rotation);
