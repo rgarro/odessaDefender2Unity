@@ -17,7 +17,7 @@ using UnityEngine;
  *                           "      }#H)
  * 
  * Col Kaddafi is hidding out in Macondo a Bayou in the Mobile Area
- * the sun is shinning in Sirte the weather is sweet ...
+ * 
  * 
  * 
  *
@@ -39,6 +39,8 @@ public class sideGunController : MonoBehaviour
     private bool gUP;
 	private bool gDown;
     public float gunElevationSteps = 0.05f;
+    public float bulletSpeed = 75;
+	public float correctionAngle = 90;
 
     void Start()
     {
@@ -97,7 +99,7 @@ public class sideGunController : MonoBehaviour
     }
 
     void shootMainGun(){
-        Debug.Log("shoot shoot");
+        Debug.Log("shoot shoot ...");
         this.playGunShot();
 			//float rotX = this.GunCamera.transform.localEulerAngles.x + this.correctionAngle;
 			//Quaternion rotation = Quaternion.Euler(rotX,this.turretObj.transform.eulerAngles.y,this.transform.localEulerAngles.z);
@@ -109,13 +111,12 @@ Debug.Log("elevY: "+elevationY);
 			//float horizontalRotationZ = (this.turretObj.transform.localEulerAngles.z-180);
             float horizontalRotationZ = (this.GunCamera.transform.localEulerAngles.z);
 Debug.Log("horizZ: " + horizontalRotationZ);	
-/**		 
+	 
 			Quaternion rotation = Quaternion.Euler(rotationX,elevationY,horizontalRotationZ);
-			Vector3 position = new Vector3(this.turretObj.transform.position.x,this.turretObj.transform.position.y,this.turretObj.transform.position.z);
-			GameObject go = (GameObject)Instantiate (this.bulletObj,position,rotation);
+			Vector3 position = new Vector3(this.GunCamera.transform.position.x,this.GunCamera.transform.position.y,this.GunCamera.transform.position.z);
+			GameObject go = (GameObject)Instantiate (this.Ammunition,position,rotation);
 			Rigidbody rb =  go.GetComponent<Rigidbody>();
-			rb.velocity = transform.forward * this.bulletSpeed;
-        **/
+			rb.velocity = transform.forward * this.bulletSpeed;//Hang em out clint eastwood  ....
     }
 
     void keyControls(){

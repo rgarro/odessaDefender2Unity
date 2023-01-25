@@ -3,9 +3,7 @@
 An Infinite slider with side gun .....
 Producing my Slingshot Turbine SurfKite ....
 Ridding my Cabrinha Stylus
-If I could get a sponsor for a Slingshot Code v1 12m with a 23 sentry bar
-is like they bought the work of the entire library ...
-Is a math model where the sponsor gets the math model merit
+Dreaming a new Sentry Bar and a Slingshot Code Kite
 
 
 Music Loop
