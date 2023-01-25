@@ -1,4 +1,5 @@
-﻿//using System.Reflection.PortableExecutable;
+﻿using System;
+//using System.Reflection.PortableExecutable;
 //using System.Reflection.PortableExecutable;
 using System.Diagnostics;
 //using System.Diagnostics;
@@ -16,8 +17,9 @@ using UnityEngine;
  *                           ))    \#H\       `"Y###
  *                           "      }#H)
  * 
- * Col Kaddafi is hidding out in Macondo a Bayou in the Mobile Area
- * 
+ * Colonel Kaddafi is hidding out in Macondo ...
+ * EverGreen is somewhere in Alabama
+ * My Lawyer was 15 minutes earlier when I was 15 minutes earlier.
  * 
  * 
  *
@@ -101,22 +103,20 @@ public class sideGunController : MonoBehaviour
     void shootMainGun(){
         Debug.Log("shoot shoot ...");
         this.playGunShot();
-			//float rotX = this.GunCamera.transform.localEulerAngles.x + this.correctionAngle;
-			//Quaternion rotation = Quaternion.Euler(rotX,this.turretObj.transform.eulerAngles.y,this.transform.localEulerAngles.z);
-			float rotationX = this.GunCamera.transform.localEulerAngles.x;// + this.correctionAngle;
+			float rotationX = this.GunCamera.transform.rotation.x *  (180/MathF.PI);//malparidos radianes las machas de BMLatino y el reageton ..
+            Debug.Log("rotX: "+rotationX);
 			//float elevationY = this.transform.localEulerAngles.y;
 			//float elevationY = (this.transform.rotation.y-90);//this.correctionAngle;
             float elevationY = (this.GunCamera.transform.rotation.y);
 Debug.Log("elevY: "+elevationY);			
 			//float horizontalRotationZ = (this.turretObj.transform.localEulerAngles.z-180);
-            float horizontalRotationZ = (this.GunCamera.transform.localEulerAngles.z);
+            float horizontalRotationZ = (this.GunCamera.transform.rotation.z);
 Debug.Log("horizZ: " + horizontalRotationZ);	
-	 
 			Quaternion rotation = Quaternion.Euler(rotationX,elevationY,horizontalRotationZ);
 			Vector3 position = new Vector3(this.GunCamera.transform.position.x,this.GunCamera.transform.position.y,this.GunCamera.transform.position.z);
 			GameObject go = (GameObject)Instantiate (this.Ammunition,position,rotation);
 			Rigidbody rb =  go.GetComponent<Rigidbody>();
-			rb.velocity = transform.forward * this.bulletSpeed;//Hang em out clint eastwood  ....
+			rb.velocity = transform.forward * this.bulletSpeed;//Hang em out clint eastwood ....
     }
 
     void keyControls(){

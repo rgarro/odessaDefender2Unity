@@ -1,10 +1,11 @@
 # odessaDefender2Unity
 
 An Infinite slider with side gun .....
+shooting transitions in the bayou waving gusts
 Producing my Slingshot Turbine SurfKite ....
 Ridding my Cabrinha Stylus
-Dreaming a new Sentry Bar and a Slingshot Code Kite
-
+Dreaming a new Sentry Bar and a Slingshot Code Kite v1 Homebrew Terminal style
+sudo port install sun_is_shinning
 
 Music Loop
 https://soundcloud.com/dorje-trolo/landing-nosara
