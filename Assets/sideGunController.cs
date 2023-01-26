@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Runtime.Intrinsics.X86;
+using System;
 //using System.Reflection.PortableExecutable;
 //using System.Reflection.PortableExecutable;
 using System.Diagnostics;
@@ -101,9 +102,8 @@ public class sideGunController : MonoBehaviour
     }
 
     void shootMainGun(){
-        Debug.Log("shoot shoot ...");
         this.playGunShot();
-			float rotationX = this.GunCamera.transform.rotation.x *  (180/MathF.PI);//malparidos radianes las machas de BMLatino y el reageton ..
+			float rotationX = float.Parse(this.GunCamera.transform.rotation.x *  (180/Math.PI));//malparidos radianes las machas de BMLatino y el reageton ..
             Debug.Log("rotX: "+rotationX);
 			//float elevationY = this.transform.localEulerAngles.y;
 			//float elevationY = (this.transform.rotation.y-90);//this.correctionAngle;
