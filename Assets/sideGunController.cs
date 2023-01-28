@@ -101,15 +101,9 @@ public class sideGunController : MonoBehaviour
 
     void shootMainGun(){
         this.playGunShot();
-			float rotationX = this.radianToDegree(this.GunCamera.transform.rotation.x);//malparidos radianes las machas de BMLatino y el reaggeton ..
-    Debug.Log("rotX: "+rotationX);//Van a matar a charly el que se achantaba por pali
-			//float elevationY = this.transform.localEulerAngles.y;
-			//float elevationY = (this.transform.rotation.y-90);//this.correctionAngle;
-            float elevationY = (this.GunCamera.transform.rotation.y);
-Debug.Log("elevY: "+elevationY);			
-			//float horizontalRotationZ = (this.turretObj.transform.localEulerAngles.z-180);
-            float horizontalRotationZ = (this.GunCamera.transform.rotation.z);
-Debug.Log("horizZ: " + horizontalRotationZ);	
+			float rotationX = this.GunCamera.transform.eulerAngles.x;//malparidos radianes las machas de BMLatino y el reaggeton ..
+            float elevationY = this.GunCamera.transform.eulerAngles.y;
+            float horizontalRotationZ = this.GunCamera.transform.eulerAngles.z;
 			Quaternion rotation = Quaternion.Euler(rotationX,elevationY,horizontalRotationZ);
 			Vector3 position = new Vector3(this.GunCamera.transform.position.x,this.GunCamera.transform.position.y,this.GunCamera.transform.position.z);
 			GameObject go = (GameObject)Instantiate (this.Ammunition,position,rotation);
