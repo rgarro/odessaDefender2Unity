@@ -57,6 +57,7 @@
   <ItemGroup>
      <Compile Include="Assets\engineController.cs" />
      <Compile Include="Assets\Scripts\barrelElevator.cs" />
+     <Compile Include="Assets\Scripts\BulletTimer.cs" />
      <Compile Include="Assets\sideGunController.cs" />
      <None Include="Assets\Heightmaps Pack\LICENSE.txt" />
      <None Include="Assets\Heightmaps Pack\READ ME.txt" />

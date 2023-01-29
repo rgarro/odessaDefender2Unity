@@ -1,7 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 using System;
 using System.Diagnostics;
-//using System.Diagnostics;
 using System.Globalization;
 using System.Collections;
 using System.Collections.Generic;
@@ -81,9 +80,7 @@ public class sideGunController : MonoBehaviour
     }
 
     void gunElevation(float degrees){
-            //float elevX = this.GunCamera.transform.localEulerAngles.x + degrees;
             float elevX = this.GunCamera.transform.rotation.x + degrees;
-           // Debug.Log("elevation X: " + elevX);
             this.GunCamera.transform.Rotate(elevX,0,0);
             this.playServoSoundOn();       
     }
@@ -101,7 +98,7 @@ public class sideGunController : MonoBehaviour
 
     void shootMainGun(){
         this.playGunShot();
-			float rotationX = this.GunCamera.transform.eulerAngles.x;//malparidos radianes las machas de BMLatino y el reaggeton ..
+			float rotationX = this.GunCamera.transform.eulerAngles.x - 180;//malparidos radianes las machas de BMLatino y el reaggeton ..
             float elevationY = this.GunCamera.transform.eulerAngles.y;
             float horizontalRotationZ = this.GunCamera.transform.eulerAngles.z;
 			Quaternion rotation = Quaternion.Euler(rotationX,elevationY,horizontalRotationZ);

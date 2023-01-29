@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4948453994147161559}
   - component: {fileID: 4948453994147161558}
   - component: {fileID: 5930604250376586031}
+  - component: {fileID: 6218633441422525354}
   - component: {fileID: 745648340486866942}
   m_Layer: 0
   m_Name: ammo
@@ -111,6 +112,20 @@ MonoBehaviour:
   scoreManagerTag: BatComputer
   ptsToIncrease: 10
   isDamage: 0
+--- !u!114 &6218633441422525354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4948453994147161553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08497d62b6dc84d04bc834dbcdb184e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seconds_to_live: 3
+  timer: 0
 --- !u!54 &745648340486866942
 Rigidbody:
   m_ObjectHideFlags: 0
