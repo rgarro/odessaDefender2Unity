@@ -18,7 +18,7 @@ using UnityEngine;
  * Colonel Kaddafi is hidding out in Macondo ...
  * EverGreen is somewhere in Alabama
  * My Lawyer was 15 minutes earlier when I was 15 minutes earlier.
- * 
+ * We were goodfellas
  * 
  *
  *
@@ -98,8 +98,9 @@ public class sideGunController : MonoBehaviour
 
     void shootMainGun(){
         this.playGunShot();
-			float rotationX = this.GunCamera.transform.eulerAngles.x - 180;//malparidos radianes las machas de BMLatino y el reaggeton ..
-            float elevationY = this.GunCamera.transform.eulerAngles.y;
+			float rotationX = 195;//this.GunCamera.transform.eulerAngles.x;//malparidos quaterniones las machas de BMLatino y el reaggeton ..
+            Debug.Log("hitting X "+ rotationX);
+            float elevationY = -169;//this.GunCamera.transform.eulerAngles.y;
             float horizontalRotationZ = this.GunCamera.transform.eulerAngles.z;
 			Quaternion rotation = Quaternion.Euler(rotationX,elevationY,horizontalRotationZ);
 			Vector3 position = new Vector3(this.GunCamera.transform.position.x,this.GunCamera.transform.position.y,this.GunCamera.transform.position.z);

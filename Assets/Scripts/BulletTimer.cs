@@ -1,7 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/**
+ *                       .-----------------TTTT_-----_______
+ *                      /''''''''''(______O] ----------____  \______/]_
+ *   __...---'"""\_ --''   Q                               ___________@
+ *|'''                   ._   _______________=---------"""""""
+ *|                ..--''|   l L |_l   |
+ *|          ..--''      .  /-___j '   '
+ *|    ..--''           /  ,       '   '
+ *|--''                /           `    \
+ *                     L__'         \    -
+ *                                   -    '-.
+ *                                    '.    /
+ *                                      '-./
+ *
+ * El General Ochoa mato el unicornio azul de Silvio Rodriguez ...
+ * El unicornio azul era un delfin que se robaron de un  bayou en Alabama 
+ * visiones del Missisipi y louisiana dan por comer los hongos que escarban la ardillas
+ * El caballo sagrado me llevo hasta Arkansas , me miro y me dijo , Ya eres un Comanche ...
+ *
+ *
+ *@author rolando<rolando@emptyart.xyz>
+ */
 public class BulletTimer : MonoBehaviour {
 
 
@@ -10,7 +31,7 @@ public class BulletTimer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//Debug.Log ("tiramos ...");
+		//Debug.Log ("tirale asere, tirale asere ...");
 	}
 	
 	// Update is called once per frame
