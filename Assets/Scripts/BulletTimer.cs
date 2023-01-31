@@ -15,11 +15,11 @@ using UnityEngine;
  *                                    '.    /
  *                                      '-./
  *
- * El General Ochoa mato el unicornio azul de Silvio Rodriguez ...
- * El unicornio azul era un delfin que se robaron de un  bayou en Alabama 
- * visiones del Missisipi y louisiana dan por comer los hongos que escarban la ardillas
- * El caballo sagrado me llevo hasta Arkansas , me miro y me dijo , Ya eres un Comanche ...
- * Aparecieron los ancestros en los territorios de caceria y nos guiaron al gran buffalo blanco
+ * General Ochoa killed Silvio Rodriguez blue unicorn ...
+ * blue unicorn was a bayou dolphin from Alabama who got kidnaped in a raid 
+ * Eating the mushrooms squirrels dig gives you visions from louisiana and missouri
+ * the sacred horse took me to Arkansas staring at me told me , Now you are a Comanche !!!
+ * 
  *
  *
  *@author rolando<rolando@emptyart.xyz>
@@ -32,7 +32,7 @@ public class BulletTimer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//Debug.Log ("tirale asere, tirale asere ...");
+		//Debug.Log ("tirale asere! tirale asere! ...");
 	}
 	
 	// Update is called once per frame

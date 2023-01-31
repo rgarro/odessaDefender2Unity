@@ -98,15 +98,15 @@ public class sideGunController : MonoBehaviour
 
     void shootMainGun(){
         this.playGunShot();
-			float rotationX = this.GunCamera.transform.eulerAngles.x;//malparidos quaterniones las machas de BMLatino y el reaggeton ..
-            Debug.Log("hitting X "+ rotationX);
-            float elevationY = this.GunCamera.transform.eulerAngles.y;
-            float horizontalRotationZ = this.GunCamera.transform.eulerAngles.z;
-			Quaternion rotation = Quaternion.Euler(rotationX,elevationY,horizontalRotationZ);
-			Vector3 position = new Vector3(this.GunCamera.transform.position.x,this.GunCamera.transform.position.y,this.GunCamera.transform.position.z);
-			GameObject go = (GameObject)Instantiate (this.Ammunition,position,rotation);
-			Rigidbody rb =  go.GetComponent<Rigidbody>();
-			rb.velocity = transform.forward * this.bulletSpeed;//Hang em out clint eastwood ....
+		float rotationX = this.GunCamera.transform.eulerAngles.x;//malparidos quaterniones las machas de BMLatino y el reaggeton ..
+        Debug.Log("hitting X "+ rotationX);
+        float elevationY = this.GunCamera.transform.eulerAngles.y;
+        float horizontalRotationZ = this.GunCamera.transform.eulerAngles.z;
+		Quaternion rotation = Quaternion.Euler(rotationX,elevationY,horizontalRotationZ);
+		Vector3 position = new Vector3(this.GunCamera.transform.position.x,this.GunCamera.transform.position.y,this.GunCamera.transform.position.z);
+		GameObject go = (GameObject)Instantiate (this.Ammunition,position,rotation);
+		Rigidbody rb =  go.GetComponent<Rigidbody>();
+		rb.velocity = this.GunCamera.transform.forward * this.bulletSpeed;//Hang em out clint eastwood ....
     }
 
     void keyControls(){
