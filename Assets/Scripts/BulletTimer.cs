@@ -19,6 +19,7 @@ using UnityEngine;
  * El unicornio azul era un delfin que se robaron de un  bayou en Alabama 
  * visiones del Missisipi y louisiana dan por comer los hongos que escarban la ardillas
  * El caballo sagrado me llevo hasta Arkansas , me miro y me dijo , Ya eres un Comanche ...
+ * Aparecieron los ancestros en los territorios de caceria y nos guiaron al gran buffalo blanco
  *
  *
  *@author rolando<rolando@emptyart.xyz>
