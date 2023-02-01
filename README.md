@@ -1,11 +1,11 @@
 # odessaDefender2Unity
 
-An Infinite slider with side gun ...
-shooting transitions in the bayou waving gusts
+An Infinite slider with Side Gun ...
 Producing my Slingshot Turbine SurfKite ...
-Ridding my Cabrinha Stylus
-Dreaming a new Sentry Bar and a Slingshot Code Kite v1 Homebrew Terminal style
-sudo port install sun_is_shinning
+Summoning a Slingshot Celero kite surfboard
+
+This Game is a Tesis of Tantric Buddhist magic Im presenting in my Doctoral Tesis at Naropa University.
+
 
 Music Loop
 https://soundcloud.com/dorje-trolo/landing-nosara
