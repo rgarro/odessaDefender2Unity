@@ -1,11 +1,15 @@
 # odessaDefender2Unity
 
-An Infinite slider with Side Gun ...
-Producing my Slingshot Turbine SurfKite ...
+An Infinite slider with Side Gun
+Producing my Slingshot Turbine SurfKite
 Summoning a Slingshot Celero kite surfboard
+I learned how to appear waving sea ....
 
 This Game is a Tesis of Tantric Buddhist magic Im presenting in my Doctoral Tesis at Naropa University.
 
+Nosara was a bastard daughter of Captain James Cook, she used to live at Garcimuñoz, Sasha Campbell is her emanation.
+
+Clone this Game at your own risk.
 
 Music Loop
 https://soundcloud.com/dorje-trolo/landing-nosara

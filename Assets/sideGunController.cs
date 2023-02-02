@@ -41,6 +41,8 @@ public class sideGunController : MonoBehaviour
     public float gunElevationSteps = 0.05f;
     public float bulletSpeed = 75;
 	public float correctionAngle = 90;
+    public float topLockAngle;
+    public float bottomLockAngle;
 
     void Start()
     {
