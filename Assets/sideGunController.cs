@@ -1,12 +1,12 @@
-﻿using System.Runtime.CompilerServices;
+﻿using System.Threading;
+using System.Runtime.CompilerServices;
 using System;
 using System.Diagnostics;
 using System.Globalization;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
- using Debug = UnityEngine.Debug;
-
+using Debug = UnityEngine.Debug;
 /**
  *                            ______
  *         |\_______________ (_____\\______________
@@ -114,7 +114,9 @@ public class sideGunController : MonoBehaviour
         //up
         if (Input.GetKey(KeyCode.F))
         {
-           this.gunElevation(this.gunElevationSteps*-1);
+            if(this.GunCamera.transform.eulerAngles.x > this.topLockAngle){
+                this.gunElevation(this.gunElevationSteps*-1);
+            }
         }
         //down
         if (Input.GetKey(KeyCode.G))
