@@ -286,7 +286,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 229.44
+      value: 229.146
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -680,7 +680,7 @@ MonoBehaviour:
   bulletSpeed: 88
   correctionAngle: 90
   topLockAngle: 186
-  bottomLockAngle: 212
+  bottomLockAngle: 217.21
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,7 +1315,7 @@ Camera:
     height: 1
   near clip plane: 0.01
   far clip plane: 958.07
-  field of view: 33
+  field of view: 38
   orthographic: 0
   orthographic size: 5
   m_Depth: -1

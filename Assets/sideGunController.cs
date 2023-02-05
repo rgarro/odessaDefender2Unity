@@ -17,7 +17,6 @@ using Debug = UnityEngine.Debug;
  * 
  * Colonel Kaddafi is hidding out in Macondo ...
  * EverGreen is somewhere in Alabama
- * My Lawyer was 15 minutes earlier when I was 15 minutes earlier ...
  * 
  * 
  *
@@ -72,9 +71,7 @@ public class sideGunController : MonoBehaviour
     }
 
     void moveLeft(){
-        if(this.checkIfGunView()){
-
-        }
+        if(this.checkIfGunView()){}
     }
 
     void moveRight(float degrees){
@@ -111,17 +108,19 @@ public class sideGunController : MonoBehaviour
     }
 
     void keyControls(){
-        //up
+        //down
         if (Input.GetKey(KeyCode.F))
         {
-            if(this.GunCamera.transform.eulerAngles.x > this.topLockAngle){
+            //if(this.GunCamera.transform.eulerAngles.x < this.bottomLockAngle){
                 this.gunElevation(this.gunElevationSteps*-1);
-            }
+            //}
         }
-        //down
+        //up
         if (Input.GetKey(KeyCode.G))
         {
-            this.gunElevation(this.gunElevationSteps);
+            if(this.GunCamera.transform.eulerAngles.x > this.topLockAngle){
+                this.gunElevation(this.gunElevationSteps);
+            }
         }
         if (Input.GetKey(KeyCode.Space))
         {
@@ -137,7 +136,6 @@ public class sideGunController : MonoBehaviour
 			this.servoSoundPlayer.Stop ();
 		}
     }
-
     void Update()
     {
         this.keyControls();   
