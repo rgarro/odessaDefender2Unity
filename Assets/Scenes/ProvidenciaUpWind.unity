@@ -286,7 +286,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 229.146
+      value: 228.744
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -1193,7 +1193,7 @@ MonoBehaviour:
   windowY: 65
   windowHeight: 170
   windowWidth: 150
-  instructionsString: "Left Right Arrow Keys \n\nSide Gun Elevation: F, G\n\nElevation:
+  instructionsString: "Left Right Arrow Keys \n\nSide Gun Elevation: F down, G up\n\nElevation:
     Up Down \n\nShoot: spacebar"
   labelString: Instructions
   marginVal: 25
