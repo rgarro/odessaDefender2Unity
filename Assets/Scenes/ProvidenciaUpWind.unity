@@ -286,7 +286,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 228.953
+      value: 227.917
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -680,7 +680,7 @@ MonoBehaviour:
   bulletSpeed: 88
   correctionAngle: 90
   topLockAngle: 186
-  bottomLockAngle: 340
+  bottomLockAngle: 358
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
