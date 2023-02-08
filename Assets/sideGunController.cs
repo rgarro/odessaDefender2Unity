@@ -111,7 +111,6 @@ public class sideGunController : MonoBehaviour
         //down
         if (Input.GetKey(KeyCode.F))
         {
-             //Debug.Log("Gun X" + this.GunCamera.transform.eulerAngles.x +" bototm "+this.bottomLockAngle);
             if(this.GunCamera.transform.eulerAngles.x < this.bottomLockAngle){
                 this.gunElevation(this.gunElevationSteps*-1);
             }
