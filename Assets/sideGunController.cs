@@ -129,7 +129,7 @@ public class sideGunController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.X))
         {
-            Debug.Log("hitting X");
+            //Debug.Log("hitting X");
         }
 
         if (Input.GetKeyUp (KeyCode.F) || Input.GetKeyUp(KeyCode.G)) {
