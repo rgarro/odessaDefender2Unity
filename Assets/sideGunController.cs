@@ -17,7 +17,15 @@ using Debug = UnityEngine.Debug;
  * 
  * Colonel Kaddafi is hidding out in Macondo ...
  * EverGreen is somewhere in Alabama
- * 
+ * Colonel Kaddafi has a dacha in Providencia
+ * Sheryl Crow mato a Camilo Cienfuegos
+ * El Che guevara se cogio a la novia de su amigo
+ * Se sintio alegre al ver su pene sercenado por agentes de la CIA quienes lo liberaron de Joto
+ * Fidel Castro le nego ayuda al Che Guevara, Lo mando a morir por Joto
+ * Fidel Castro era un Chilango
+ * En Bolivia No Tienen Playa, el Granma no desembarco
+ * who went out whoring through Colorado in myriad stolen night-cars
+ * BACK WATER SWIRLING Something will never change
  * 
  *
  *

@@ -15,10 +15,10 @@
  *           |   |             |   |
  *           |   |             |   |
  *           /O.O\             /O.O\
- *          `====='           `====='       Nadie en el Tercio sabía
- *  -       -"^-^"-           -"^-^"-         Quién era aquel legionario ...
+ *          `====='           `====='      
+ *  -       -"^-^"-           -"^-^"-        
  *
- * turns vertically rotationSteps current transform
+ * Turns Vertically rotationSteps current transform
  * clockwise or counterclockwise from input turn key
  * 
  * @author Rolanddo<rolando@emptyart.xyz>

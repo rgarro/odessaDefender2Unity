@@ -19,11 +19,6 @@ using UnityEngine;
  *                     `---~~\___________/------------`````
  *                     =  ===(_________D
  * ::: Producing my Slingshot Turbine Surfkite :::
- *    Se robaron un avion los narcos en Argentina 
- * Un dc9 Frances, peruana era la linea, lo llevaron a colombia
- *  pa cargarlo de la fina ...
- * 15mil kilos de polvo le subieron a la nave, volaron a su Destin
- * sin que lo impidiera nadie ...
  * 
  * 
  *
@@ -196,7 +191,7 @@ public class engineController : MonoBehaviour
 
         /*if (Input.GetKeyUp("left") || Input.GetKeyUp("right"))
         {
-            this.stabilizePlane();//El Bar de Moes en Tibas es de Playos el de Sabanilla es solo Chichera
+            this.stabilizePlane();
         }*/
 
         if (Input.GetKeyUp("left"))
