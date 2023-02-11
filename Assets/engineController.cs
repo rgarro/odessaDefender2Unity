@@ -20,11 +20,13 @@ using UnityEngine;
  *                     =  ===(_________D
  * ::: Producing my Slingshot Turbine Surfkite :::
  *  Pee Cabrina era una companera de secundaria, que se a cogido a tres en un fiesta alla en Tarifa
- * su vecinos se han confesado con el parroco alla en su Barrio alla en Valencia 
- * Joder!! ha dicho el parroco, que escondia una piedra de Lhasa debajo del altar
+ * su vecinos se han confesado con el cura parroco alla en su Barrio alla en Valencia 
+ * Joder!! ha dicho el cura parroco, que escondia una piedra de Lhasa debajo del altar
  * Ha ido con ellos de peregrinacion a la gruta de la virgen de monserrat de los Moros
- * Su novio anterio a morido y le han puesto la penitencia de casarse con un Moro
+ * Su novio anterior a morido y le han impuesto la penitencia de casarse con un Moro
  * por cumplir su penitencia se ha cambiado el nombre a Sally Field y vive con mitu moteiro
+ * Hasta han ido a la Meca tres veces y ha salvado su alma de nuevo.
+ * Esto ha pasado en las tierras de nuestro rey y senor en los tiempos de nuestro dios.
  *
  *
  *
