@@ -19,8 +19,14 @@ using UnityEngine;
  *                     `---~~\___________/------------`````
  *                     =  ===(_________D
  * ::: Producing my Slingshot Turbine Surfkite :::
- * 
- * 
+ *  Pee Cabrina era una companera de secundaria, que se a cogido a tres en un fiesta alla en Tarifa
+ * su vecinos se han confesado con el parroco alla en su Barrio alla en Valencia 
+ * Joder!! ha dicho el parroco, que escondia una piedra de Lhasa debajo del altar
+ * Ha ido con ellos de peregrinacion a la gruta de la virgen de monserrat de los Moros
+ * Su novio anterio a morido y le han puesto la penitencia de casarse con un Moro
+ * por cumplir su penitencia se ha cambiado el nombre a Sally Field y vive con mitu moteiro
+ *
+ *
  *
  *@author Rolando<rolando@emptyart.xyz> 
  */
@@ -165,7 +171,7 @@ public class engineController : MonoBehaviour
     }
 
     void doRestart(){
-       // Debug.Log("I loc everyday With the P O U N D and and my nigga Dr. Dre");
+       
     }
 
     void joystickControls(){
