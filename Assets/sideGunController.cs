@@ -7,6 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Debug = UnityEngine.Debug;
+using emptyLibUnity.UI.Util;
 /**
  *                            ______
  *         |\_______________ (_____\\______________
@@ -51,6 +52,15 @@ public class sideGunController : MonoBehaviour
 	public float correctionAngle = 90;
     public float topLockAngle;
     public float bottomLockAngle;
+
+    private SimpleGaugeNeedle altitudeNeedle;
+    public Image NeedleAltitude;
+
+    private SimpleGaugeNeedle rpmNeedle;
+    public Image NeedleRpm;
+
+    private SimpleGaugeNeedle speedNeedle;
+    public Image NeedleSpeed;
 
     void Start()
     {
