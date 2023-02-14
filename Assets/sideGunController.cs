@@ -70,6 +70,11 @@ public class sideGunController : MonoBehaviour
         this.servoSoundPlayer = GetComponent<AudioSource>();
 		this.gUP = false;
 		this.gDown = false;
+        this.startDashItems();
+    }
+
+    void startDashItems(){
+
     }
 
     private float radianToDegree(float angle){
