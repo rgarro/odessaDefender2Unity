@@ -66,6 +66,8 @@ public class engineController : MonoBehaviour
     public float maxZBoundaryPos = 10.2f;
     public float returnZpos = 900.1f;
 
+    private SimpleGaugeNeedle speedNeedle;
+    public Image NeedleSpeed;
 
     // Start is called before the first frame update
     void Start()
