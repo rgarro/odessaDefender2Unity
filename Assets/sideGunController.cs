@@ -57,8 +57,8 @@ public class sideGunController : MonoBehaviour
     private SimpleGaugeNeedle altitudeNeedle;
     public Image NeedleAltitude;
 
-    private SimpleGaugeNeedle rpmNeedle;
-    public Image NeedleRpm;
+    //private SimpleGaugeNeedle rpmNeedle;
+    //public Image NeedleRpm;
 
     private SimpleGaugeNeedle speedNeedle;
     public Image NeedleSpeed;
@@ -74,8 +74,30 @@ public class sideGunController : MonoBehaviour
     }
 
     void startDashItems(){
+        this.altitudeNeedle = new SimpleGaugeNeedle();
+		this.altitudeNeedle.Needle = this.NeedleAltitude;
 
+        //this.rpmNeedle = new SimpleGaugeNeedle();
+        //this.rpmNeedle.Needle = this.NeedleRpm;
+
+         this.speedNeedle = new SimpleGaugeNeedle();
+        this.speedNeedle.Needle = this.NeedleSpeed;
     }
+
+ void setAltitude(){
+		//this.altitudeNeedle.getTilter(Mathf.Ceil(this.helicopter.transform.position.y));
+		//this.altitudeNeedle.tiltNeedle();
+	}
+
+     /*void setEnginePower(){
+		this.rpmNeedle.getTilter(this.rotationSteps);
+		this.rpmNeedle.tiltNeedle();
+	}*/
+
+    void setSpeedNeedle(){
+		//this.speedNeedle.getTilter(this.forwardSpeed);
+		//this.speedNeedle.tiltNeedle();
+	}
 
     private float radianToDegree(float angle){
 		return angle * (180.0f / Mathf.PI);
@@ -163,6 +185,10 @@ public class sideGunController : MonoBehaviour
     }
     void Update()
     {
-        this.keyControls();   
+        this.keyControls();
+        //update gauges
+        this.setAltitude();
+        //this.setEnginePower();
+        this.setSpeedNeedle();   
     }
 }

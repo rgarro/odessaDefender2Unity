@@ -286,7 +286,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 246.3
+      value: 256.9
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -682,7 +682,6 @@ MonoBehaviour:
   topLockAngle: 186
   bottomLockAngle: 359
   NeedleAltitude: {fileID: 1019156898}
-  NeedleRpm: {fileID: 0}
   NeedleSpeed: {fileID: 1019156897}
 --- !u!4 &359456315 stripped
 Transform:
