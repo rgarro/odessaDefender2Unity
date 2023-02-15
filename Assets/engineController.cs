@@ -79,6 +79,12 @@ public class engineController : MonoBehaviour
         this.soundPlayer = GetComponent<AudioSource> ();
         this.soundPlayer.volume = 0.2F;
         this.playEngineSound();
+        this.startDashItems();
+    }
+
+    void startDashItems(){
+         this.speedNeedle = new SimpleGaugeNeedle();
+        this.speedNeedle.Needle = this.NeedleSpeed;
     }
 
     // Update is called once per frame
