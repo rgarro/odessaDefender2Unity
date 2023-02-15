@@ -85,8 +85,8 @@ public class sideGunController : MonoBehaviour
     }
 
  void setAltitude(){
-		//this.altitudeNeedle.getTilter(Mathf.Ceil(this.helicopter.transform.position.y));
-		//this.altitudeNeedle.tiltNeedle();
+		this.altitudeNeedle.getTilter(Mathf.Ceil(this.GunCamera.transform.position.y));
+		this.altitudeNeedle.tiltNeedle();
 	}
 
      /*void setEnginePower(){
