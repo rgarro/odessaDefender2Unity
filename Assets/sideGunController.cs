@@ -60,8 +60,7 @@ public class sideGunController : MonoBehaviour
     //private SimpleGaugeNeedle rpmNeedle;
     //public Image NeedleRpm;
 
-    private SimpleGaugeNeedle speedNeedle;
-    public Image NeedleSpeed;
+
 
     void Start()
     {
@@ -76,12 +75,8 @@ public class sideGunController : MonoBehaviour
     void startDashItems(){
         this.altitudeNeedle = new SimpleGaugeNeedle();
 		this.altitudeNeedle.Needle = this.NeedleAltitude;
-
         //this.rpmNeedle = new SimpleGaugeNeedle();
         //this.rpmNeedle.Needle = this.NeedleRpm;
-
-         this.speedNeedle = new SimpleGaugeNeedle();
-        this.speedNeedle.Needle = this.NeedleSpeed;
     }
 
  void setAltitude(){

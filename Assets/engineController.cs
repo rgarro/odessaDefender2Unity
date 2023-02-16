@@ -8,6 +8,8 @@ using System.Globalization;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using emptyLibUnity.UI.Util;
+using UnityEngine.UI;
 /**
  * The Dharmakaya of my Slingshot Mixer Surfboard
  * :: AC130  Helimover ::
@@ -87,6 +89,11 @@ public class engineController : MonoBehaviour
         this.speedNeedle.Needle = this.NeedleSpeed;
     }
 
+       void setSpeedNeedle(){
+		//this.speedNeedle.getTilter(this.forwardSpeed);
+		//this.speedNeedle.tiltNeedle();
+	}
+
     // Update is called once per frame
     void Update()
     {
@@ -94,6 +101,7 @@ public class engineController : MonoBehaviour
        this.moveForward();
        this.joystickControls();
        this.reachZBoundaryBack();
+       this.setSpeedNeedle();
     }
 
     private void rotateHelipad(){
