@@ -1,4 +1,4 @@
-﻿using System.Threading;
+using System.Threading;
 using System.Runtime.CompilerServices;
 using System;
 using System.Diagnostics;
@@ -19,15 +19,14 @@ using UnityEngine.UI;
  * 
  * Colonel Kaddafi is hidding out in Macondo ...
  * EverGreen is somewhere in Alabama
- * Colonel Kaddafi has a dacha in Providencia
+ * Colonel Kaddafi has a dacha in Isla Providencia
+ * Parse Int y Parse Float comandan sus lanchas piratas
  * Sheryl Crow mato a Camilo Cienfuegos
  * El Che guevara se cogio a la novia de su amigo
  * Se sintio alegre al ver su pene sercenado por agentes de la CIA quienes lo liberaron de Joto
- * Fidel Castro le nego ayuda al Che Guevara, Lo mando a morir por Joto
  * Fidel Castro era un Chilango
  * En Bolivia No Tienen Playa, el Granma no desembarco
  * who went out whoring through Colorado in myriad stolen night-cars
- * BACK WATER SWIRLING Something will never change
  *
  * 
  *
@@ -75,23 +74,11 @@ public class sideGunController : MonoBehaviour
     void startDashItems(){
         this.altitudeNeedle = new SimpleGaugeNeedle();
 		this.altitudeNeedle.Needle = this.NeedleAltitude;
-        //this.rpmNeedle = new SimpleGaugeNeedle();
-        //this.rpmNeedle.Needle = this.NeedleRpm;
     }
 
- void setAltitude(){
+    void setAltitude(){
 		this.altitudeNeedle.getTilter(Mathf.Ceil(this.GunCamera.transform.position.y));
 		this.altitudeNeedle.tiltNeedle();
-	}
-
-     /*void setEnginePower(){
-		this.rpmNeedle.getTilter(this.rotationSteps);
-		this.rpmNeedle.tiltNeedle();
-	}*/
-
-    void setSpeedNeedle(){
-		//this.speedNeedle.getTilter(this.forwardSpeed);
-		//this.speedNeedle.tiltNeedle();
 	}
 
     private float radianToDegree(float angle){

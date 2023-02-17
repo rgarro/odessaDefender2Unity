@@ -90,8 +90,8 @@ public class engineController : MonoBehaviour
     }
 
        void setSpeedNeedle(){
-		//this.speedNeedle.getTilter(this.forwardSpeed);
-		//this.speedNeedle.tiltNeedle();
+		this.speedNeedle.getTilter(this.yardsPerSecond);
+		this.speedNeedle.tiltNeedle();
 	}
 
     // Update is called once per frame
