@@ -171,6 +171,6 @@ public class sideGunController : MonoBehaviour
         //update gauges
         this.setAltitude();
         //this.setEnginePower();
-        this.setSpeedNeedle();   
+        //this.setSpeedNeedle();   
     }
 }
