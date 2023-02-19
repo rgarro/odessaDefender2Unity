@@ -59,7 +59,7 @@ public class engineController : MonoBehaviour
     public float maxAltitude = 15.35f;
     public float elevationSteps = 0.05f;
     private bool isDived = false;
-    private bool isDivedr = false;
+//    private bool isDivedr = false;
     private bool isElevated = false;
     private bool isdElevated = false;
     public float elevationCurveAngleX = 3.25f;
@@ -85,7 +85,8 @@ public class engineController : MonoBehaviour
     }
 
     void startDashItems(){
-         this.speedNeedle = new SimpleGaugeNeedle();
+        this.speedNeedle = new SimpleGaugeNeedle();
+        //this.speedNeedle = this.AddComponent(typeof(SimpleGaugeNeedle)) as SimpleGaugeNeedle;
         this.speedNeedle.Needle = this.NeedleSpeed;
     }
 
@@ -152,6 +153,7 @@ public class engineController : MonoBehaviour
             if(!this.isElevated){
                 this.AirPlane.transform.Rotate(this.elevationCurveAngleX,0,0);
                 this.isElevated = true;
+                //Stepping
                 /*if(this.AirPlane.transform.rotation.x < this.elevationCurveAngleX){
                     float nextElevationAngle = this.AirPlane.transform.rotation.x + this.elevationStep;
                     //this.AirPlane.transform.Rotate(this.elevationCurveAngleX,0,0);

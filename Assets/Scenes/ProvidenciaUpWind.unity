@@ -286,7 +286,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 288.5
+      value: 210
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 0eb3064c7459f854a911616244dd1a90,
         type: 3}
@@ -454,12 +454,12 @@ MonoBehaviour:
   diveCurveAngleZ: 3.94
   sideDiveAccelerationRate: 1.53
   minAltitude: 3.16
-  maxAltitude: 15.37
+  maxAltitude: 16.37
   elevationSteps: 0.06
   elevationCurveAngleX: 15.32
   descendingCurveAngleX: -15.93
-  elevationStep: 0.25
-  maxZBoundaryPos: 5.1
+  elevationStep: 0.22
+  maxZBoundaryPos: 5.12
   returnZpos: 900.1
   NeedleSpeed: {fileID: 1019156897}
 --- !u!1 &359456306 stripped

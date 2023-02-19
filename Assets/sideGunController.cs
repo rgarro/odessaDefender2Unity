@@ -19,14 +19,11 @@ using UnityEngine.UI;
  * 
  * Colonel Kaddafi is hidding out in Macondo ...
  * EverGreen is somewhere in Alabama
- * Colonel Kaddafi has a dacha in Isla Providencia
- * Parse Int y Parse Float comandan sus lanchas piratas
  * Sheryl Crow mato a Camilo Cienfuegos
- * El Che guevara se cogio a la novia de su amigo
- * Se sintio alegre al ver su pene sercenado por agentes de la CIA quienes lo liberaron de Joto
+ * El Che guevara era un joto que se cogio a la novia de su amigo
+ * Se sintio alegre al ver su pene sercenado por agentes de la CIA
  * Fidel Castro era un Chilango
  * En Bolivia No Tienen Playa, el Granma no desembarco
- * who went out whoring through Colorado in myriad stolen night-cars
  *
  * 
  *
@@ -45,8 +42,8 @@ public class sideGunController : MonoBehaviour
     public float rotationStepLenght = 0.3f;
     private AudioSource servoSoundPlayer;
     public AudioClip servoSoundClip;
-    private bool gUP;
-	private bool gDown;
+  //  private bool gUP;
+//	private bool gDown;
     public float gunElevationSteps = 0.05f;
     public float bulletSpeed = 75;
 	public float correctionAngle = 90;
@@ -66,8 +63,8 @@ public class sideGunController : MonoBehaviour
         this.soundPlayer = GetComponent<AudioSource> ();
         this.soundPlayer.volume = 0.2F;
         this.servoSoundPlayer = GetComponent<AudioSource>();
-		this.gUP = false;
-		this.gDown = false;
+		//this.gUP = false;
+		//this.gDown = false;
         this.startDashItems();
     }
 
@@ -158,7 +155,7 @@ public class sideGunController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.X))
         {
-            //Debug.Log("hitting X");
+            //Debug.Log("Hitting X");
         }
 
         if (Input.GetKeyUp (KeyCode.F) || Input.GetKeyUp(KeyCode.G)) {
@@ -169,8 +166,6 @@ public class sideGunController : MonoBehaviour
     {
         this.keyControls();
         //update gauges
-        this.setAltitude();
-        //this.setEnginePower();
-        //this.setSpeedNeedle();   
+        this.setAltitude(); 
     }
 }
